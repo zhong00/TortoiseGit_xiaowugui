@@ -1,0 +1,114 @@
+#calc {
+    margin:20px auto;
+    height: 500px;
+    width: 300px;
+    border: 5px solid black;
+}
+
+.logo {
+    font-size: 1.2em;
+    text-align: center;
+}
+/*in {
+    height: 50px;
+    width: 250px;
+    margin: 15px auto;
+}*/
+#calc #show {
+    display: inline-block;
+    height: 20px;
+    width: 250px;
+    border: 3px solid gray;
+    border-bottom: 0px;
+    margin: 15px 0 0px 20px;
+    font-size: 1em;
+    color: green;
+    text-align: right;
+}
+
+#calc #input {
+    display: inline-block;
+    height: 30px;
+    width: 250px;
+    border: 3px solid gray;
+    border-top: 0px;
+    margin: 0px 0 10px 20px;
+    font-size: 2em;
+    color: green;
+    text-align: right;
+}
+
+.line {
+    width: 260px;
+    margin:20px auto;
+    letter-spacing: 0;
+}
+.symbol {
+    font-size: 1.7em;
+    display: inline-block;
+    height: 50px;
+    width: 47px;
+    background-color: #aaa;
+    border:2px solid black;
+    border-radius: 0.5em;
+    margin-right: 7px;
+    padding-left: 3px;
+    text-align: center;
+    cursor: pointer;/*鼠标手指*/
+}
+
+.number {
+    font-size: 1.7em;
+    display: inline-block;
+    height: 50px;
+    width: 47px;
+    background-color: #eee;
+    border:2px solid black;
+    border-radius: 0.5em;
+    margin-right: 7px;
+    padding-left: 3px;
+    text-align: center;
+    cursor: pointer;/*鼠标手指*/
+}
+
+.equal {
+    float: right;
+    font-size: 1.7em;
+    display: inline-block;
+    height: 123px;
+    width: 47px;
+    background-color: orange;
+    border:2px solid black;
+    border-radius: 0.5em;
+    margin-right: 7px;
+    padding-left: 3px;
+    text-align: center;
+    cursor: pointer;/*鼠标手指*/
+}
+
+.line .number0 {
+    font-size: 1.7em;
+    display: inline-block;
+    height: 50px;
+    width: 113px;
+    background-color: #eee;
+    border:2px solid black;
+    border-radius: 0.5em;
+    margin-right: 7px;
+    padding-left: 3px;
+    text-align: center;
+}
+
+#start {
+    font-size: 1.7em;
+    display: inline-block;
+    height: 50px;
+    width: 113px;
+    background-color: #aaa;
+    border:2px solid black;
+    border-radius: 0.5em;
+    margin-right: 7px;
+    padding-left: 3px;
+    text-align: center;
+    cursor: pointer;/*鼠标手指*/
+}

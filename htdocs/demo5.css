@@ -1,0 +1,63 @@
+#part1 {
+    width: 200px;
+    margin:20px auto;
+}
+
+#part2 {
+    width: 200px;
+    margin:20px auto;
+}
+
+#part2 button {
+    margin-left: 30px;
+}
+
+#part2 div {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    text-align: center;
+}
+
+#part3 {
+    width: 400px;
+    margin:20px auto;
+}
+
+#part3 img {
+    border:solid black 2px;
+    padding: 20px;
+    opacity: 0.3;
+}
+
+#part4 {
+    width: 500px;
+    height: 100px;
+    margin:20px auto;
+}
+#tab {
+    list-style-type: none;
+    padding:0;
+}
+
+#tab li {
+    width: 120px;
+    height: 20px;
+    float: left;
+    border:solid black 1px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+#content {
+    width: 424px;
+    height: 70px;
+    border:solid black 1px;
+    clear:both;
+}
+
+#content ul {
+    display: none;
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:link,a:visited,a:hover {
+    color: white;
+}
+
+h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: blue;
+}
+
+div {
+    width: 400px;
+    margin: 20px auto;
+    padding:20px;
+    color: white;
+    border: 8px solid #aaa;
+    border-radius: 1em;
+}
+
+dt {
+    background-color: blue;
+    padding: 3px;
+    margin-top: 3px;
+}
+dd {
+    font-size: small;
+    padding: 3px;
+    margin-top: 3px;
+    display: none;
+    background-color: #59DCA1;
+}

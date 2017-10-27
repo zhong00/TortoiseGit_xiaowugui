@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo3-计算器</title>
+    <link rel="stylesheet" href="demo3.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div id="calc">
+        <div class="logo">666牌计算器</div>
+        <input type="textarea" readonly="readonly" id="show">
+        <input type="textarea" readonly="readonly" id="input"><!-- 只读状态 -->
+        <div>
+            <div class="line">
+                <span class="symbol" id="start">c</span>
+                
+                <span class="symbol">/</span>
+                <span class="symbol">*</span>
+            </div>
+            <div class="line">
+                <span class="number">7</span>
+                <span class="number">8</span>
+                <span class="number">9</span>
+                <span class="symbol">-</span>
+            </div>
+            <div class="line">
+                <span class="number">4</span>
+                <span class="number">5</span>
+                <span class="number">6</span>
+                <span class="symbol" id="plus">+</span>
+            </div>
+            <div class="line">
+                <span class="number">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+                <div class="equal">=</div>
+            </div>
+            <div class="line">
+                <span class="number0 number">0</span>
+                <span class="number">.</span>
+            </div>
+        </div>
+    </div>
+    <script>
+    
+    var exp="";
+    var matt = new RegExp("[-/\*\+]");/*定义正则表达式匹配加减乘除标点符号*/
+           
+    var mattdot = new RegExp("\.");
+    // var mattdot = new RegExp("\.[0-9]+$");
+    // 点击数字按钮
+    $(".number").click(function(){
+        // if($(this).text()==="."&&(mattdot.test(exp))){/*||exp[exp.length-1]==="."*/
+        //     alert("mattdot.test(exp)"+exp.match(mattdot));
+        //     alert(exp);
+        //     return false;
+        // }
+        exp += $(this).text();/*点击按钮的值添加到exp中*/
+        if((exp.search(matt))===-1) { /*匹配exp没有标点时框框中显示exp*/
+            $("#input").prop("value",exp);
+            $("#show").prop("value",exp);
+            if($("#input").val().length>=14) {/*输入数字大于14位显示太长了*/
+                $("#input").prop("value","太长了");
+                $("#show").prop("value","太长了");
+            }
+        }
+        else{/*匹配exp有标点符号时从最后一位往前匹配到标点，截取标点后的字符串*/
+            for(var i=exp.length;i>0;i--){
+                if(matt.test(exp[i-2])) break;
+            }
+            $("#input").prop("value",exp.substring(i-1));
+            $("#show").prop("value",exp);
+            if($("#input").val().length>=14) {/*输入数字大于14位显示太长了*/
+                $("#input").prop("value","太长了");
+                $("#show").prop("value","太长了");
+            }
+        } 
+    });
+
+    // 点击符号按钮
+    $(".symbol").click(function(){
+        if(matt.test(exp[exp.length-1])) exp=exp.substr(0,exp.length-1);/*如果前一位也是符号则去掉前一位*/
+        exp += $(this).text();
+        $("#input").prop("value",$(this).text());
+        $("#show").prop("value",exp);
+    })
+
+    // 点击等于号按钮
+    $(".equal").click(function(){
+        $("#input").prop("value",eval(exp));
+    })
+
+    // 点击归零按钮
+    $("#start").click(function(){
+        exp="";
+        $("#input").prop("value",exp);
+        $("#show").prop("value",exp);
+    })
+    
+    </script>
+    
+</body>
+</html>

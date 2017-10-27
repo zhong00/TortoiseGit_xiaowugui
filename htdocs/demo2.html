@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo2</title>
+    <link rel="stylesheet" href="demo2.css" type="text/css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div id="setcolor">
+        背景颜色<span class="red"></span><span class="white"></span><span class="gray"></span>
+    </div><hr />
+    <form class="sports" action="#" method="post">
+    你喜欢的运动是？<br/>
+       <input type="checkbox" name="abc" value="1" />足球<br/>
+       <input type="checkbox" name="abc" value="2" />篮球<br/>
+       <input type="checkbox" name="abc" value="3" />乒乓球<br/>
+       <input type="checkbox" name="abc" value="4" />跑步<br />
+       <input id="all" type="button" value="全选"/>
+       <input id="none" type="button" value="全不选"/>
+       <input id="exchange" type="button" value="反选"/>
+    </form>
+    <hr />
+    <form action="#" class="editbox" method="post">
+        <div>
+        <input type="button" id="bigger" value="放大">
+        <input type="button" id="smaller" value="缩小">
+        <input type="button" id="up" value="向上">
+        <input type="button" id="down" value="向下">   
+        </div>
+        <br />
+        <textarea id="editarea" name="sth" id="" cols="15" rows="10">多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本多行文本</textarea>
+    </form>
+    <hr />
+    <div id="part3">
+        <div>
+        <button>变宽</button>
+        <button>变高</button>
+        <button>变色</button>
+        <button>隐藏</button>
+        <button>重置</button> 
+        </div>
+        <div></div>
+    </div>
+    <script>
+    // 设置背景颜色
+        $("#setcolor .red").click(function(){
+            $("body").css("background-color","red");
+        });
+        $("#setcolor .white").click(function(){
+            $("body").css("background-color","white");
+        });
+        $("#setcolor .gray").click(function(){
+            $("body").css("background-color","gray");
+        });
+    // 全选全不选
+        $("#all").click(function(){
+            $("[name='abc']").prop("checked","checked");
+        });
+        $("#none").click(function(){
+            $("[name='abc']").prop("checked","");
+        })
+        $("#exchange").click(function(){
+            $("[name='abc']").each(function(){
+                if($(this).is(":checked")){
+                    $(this).prop("checked","");
+                }else {
+                    $(this).prop("checked","checked");
+                }
+            });
+        });
+    // 更改编辑框
+        editarea = document.getElementById("editarea");
+        $("#bigger").click(function(){
+            if(editarea.rows<15){
+                editarea.rows+=3;
+            }
+        });
+        $("#smaller").click(function(){
+            if(editarea.rows>5){
+                editarea.rows-=3;
+            } 
+        });
+        var $editarea = $(editarea);
+        $("#up").click(function(){
+            if(!($editarea.is(":animated"))) {
+                $editarea.animate({scrollTop:"+=50"},400);
+            }
+        });
+        $("#down").click(function(){
+            if(!$editarea.is(":animated")){
+                $editarea.animate({scrollTop:"-=50"},400);
+            }
+        });
+
+    /*动画改变div*/
+    $("#part3 button:nth-child(1)").click(function(){
+        $(this).parent().siblings().css("width","150px");
+    });
+    $("#part3 button:nth-child(2)").click(function(){
+        $(this).parent().siblings().css("height","150px");
+    });
+    $("#part3 button:nth-child(3)").click(function(){
+        $(this).parent().siblings().css("background-color","red");
+    });
+    $("#part3 button:nth-child(4)").click(function(){
+        $(this).parent().siblings().hide();
+    });
+    $("#part3 button:nth-child(5)").click(function(){
+        $(this).parent().siblings().css({"width":"100px","height":"100px","background-color":"black","display":"block"});
+    });
+    </script>
+</body>
+</html>

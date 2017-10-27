@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="nianli.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><strong>1</strong>JAN</li>
+            <li><strong>2</strong>FEB</li>
+            <li><strong>3</strong>MAR</li>
+            <li><strong>4</strong>APR</li>
+            <li><strong>5</strong>MAY</li>
+            <li><strong>6</strong>JUN</li>
+            <li><strong>7</strong>JUL</li>
+            <li><strong>8</strong>AUG</li>
+            <li><strong>9</strong>SEP</li>
+            <li class="current"><strong>10</strong>OCT</li>
+            <li><strong>11</strong>NOV</li>
+            <li><strong>12</strong>DEC</li>
+        </ul>
+        <div id="holiday">
+            <p class="title">10月节日</p>
+            <p class="content">国庆节：10月1日至7日放假7天。</p>
+        </div>
+    </div>
+    <hr/>
+    <button id="btn">0</button>
+    <div id="clock">
+        <span class="time"></span>时
+        <span class="time"></span>分
+        <span class="time"></span>秒
+    </div>
+    <div id="countdown">
+        <span></span>分<span></span>秒
+        <button>启动</button>
+    </div>
+<script>
+        var oArray = [
+        "元旦：1月1日至3日放假三天。",
+        "春节：2月2日至8日放假7天。",
+        "妇女节：3月8日妇女节，与我无关。",
+        "清明节：4月3日至5日放假3天",
+        "劳动节：4月30日至5月2日放假3天。",
+        "端午节：6月4日至6日放假3天。",
+        "小暑：7月7日小暑。不放假。",
+        "七夕节：8月6日七夕节。不放假。",
+        "中秋节：9月10日至12日放假3天。",
+        "国庆节：10月1日至7日放假7天。",
+        "立冬：11月8日立冬。不放假。",
+        "艾滋病日:12月1日<br />废除奴隶制国际日:12月2日。"
+        ]; 
+        $("li").hover(function(){
+            var otext = oArray[$(this).index()];
+            $(this).addClass("current");
+            $("#holiday").empty().append("<p class='title'>"+($(this).index()+1)+"月节日</p><p class='content'>"+otext+"</p>");
+        },function(){
+            $(this).removeClass("current");
+        });   
+
+        //button
+        $("#btn").click(function(){
+            var o = parseInt($(this).text())+1;
+            $(this).text(o);
+        });
+
+        //clock
+        $(document).ready(function($) {
+            setTime();
+            setInterval(setTime,1000);
+            function setTime(){
+                var otime = new Date();
+                $("#clock span:nth-of-type(1)").text(otime.getHours());
+                $("#clock span:nth-of-type(2)").text(otime.getMinutes());
+                $("#clock span:nth-of-type(3)").text(otime.getSeconds());
+            }
+            
+        });
+
+        //countdown
+        var timing = 100,
+            m;
+
+        $("#countdown button").click(function(){
+            if($(this).prop('class')=="") {
+                $(this).prop('class','running');
+                m = setInterval(countDown,1000);
+            }
+            else {
+                $(this).prop('class','');
+                clearInterval(m);
+            }
+        });
+        function countDown(){
+            timing--;
+            if(timing>=60){
+                $("#countdown span:nth-of-type(2)").text(timing-60);
+                $("#countdown span:nth-of-type(1)").text(1);
+            } else {
+                $("#countdown span:nth-of-type(2)").text(timing);
+                $("#countdown span:nth-of-type(1)").text(0);
+            }
+        }
+        
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+}
+body>div {
+    width: 250px;
+    margin:30px auto;
+    background-color: #EAEAEA;
+}
+ul {
+    width:250px;
+    letter-spacing: -8px;
+}
+
+li {
+    list-style-type: none;
+    width: 49px;
+    height: 49px;
+    border:solid 1px #424242;
+    margin: 10px 10px 0 0;
+    display: inline-block;
+    background-color: #424242;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+}
+li.current {
+    background-color: white;
+    color: #FF6699;
+    border: solid 1px black;
+   
+}
+
+li:nth-of-type(4n+1){
+    margin-left: 10px;
+}
+
+strong {
+    font-weight: bolder;
+    display: block;
+}
+
+#holiday {
+    width: 228px;
+    border:solid 1px white;
+    margin:10px auto;
+    margin-bottom: 20px;
+    background-color: #F1F1F1;
+    padding:5px;
+    font-size: small;
+}
+
+p{
+    line-height: 1.5em;
+}
+p.title {
+    font-weight: bolder;
+}
+
+#holiday:after {
+    content:"";
+}
+
+#btn {
+    width: 50px;
+    height: 50px;
+    margin:20px auto;
+    display: block;
+}
+
+#clock {
+    width:250px;
+    height: 80px;
+    margin:20px auto;
+    background-color: black;
+    color: #fff;
+    line-height:80px;
+    text-align: center; 
+}
+
+.time {
+    display: inline-block;
+    width:40px;
+    height: 30px;
+    background-color: white;
+    border:solid 3px #aaa;
+    color: black;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+#countdown {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    color:#fff;
+    text-align: center;
+    padding:12px;
+}
+
+#countdown span {
+    background-color: white;
+    color:black;
+    height: 30px;
+    width: 40px;
+    display: inline-block;
+    line-height: 30px;
+    border:solid 3px #aaa;
+}
+
+#countdown button {
+    background-color: red;
+    width: 150px;
+    height: 40px;
+    margin:15px auto;
+    display: block;
+}
+
+#countdown .running {
+    background-color: green;
+}

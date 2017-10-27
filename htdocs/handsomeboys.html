@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>handsomeboys</title>
+    <link rel="stylesheet" href="handsomeboys.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div>
+    <ul class="left">
+        <li><img src="mini3/01.jpg" alt=""></li>
+        <li><img src="mini3/03.jpg" alt=""></li>
+        <li><img src="mini3/60.jpg" alt=""></li>
+        <li><img src="mini3/07.jpg" alt=""></li>
+        <li><img src="mini3/62.jpg" alt=""></li>
+        <li><img src="mini3/04.jpg" alt=""></li>
+    </ul>
+    <ul class="top">
+        <li><img src="mini3/59.jpg" alt=""></li>
+        <li><img src="mini3/61.jpg" alt=""></li>
+        <li><img src="mini3/62.jpg" alt=""></li>
+        <li><img src="mini3/63.jpg" alt=""></li>
+    </ul>
+    <ul class="right">
+        <li><img src="mini3/05.jpg" alt=""></li>
+        <li><img src="mini3/06.jpg" alt=""></li>
+        <li><img src="mini3/08.jpg" alt=""></li>
+        <li><img src="mini3/65.jpg" alt=""></li>
+        <li><img src="mini3/64.jpg" alt=""></li>
+        <li><img src="mini3/59.jpg" alt=""></li>
+    </ul>
+    <ul class="bottom">
+        <li><img src="mini3/59.jpg" alt=""></li>
+        <li><img src="mini3/61.jpg" alt=""></li>
+        <li><img src="mini3/62.jpg" alt=""></li>
+        <li><img src="mini3/63.jpg" alt=""></li>
+    </ul>
+    <div id="showpic"><img src="" alt=""></div></div>
+    <script>
+    $("img").mouseover(function(){
+        var imgsrc = $(this).prop("src");
+        var showimgsrc = imgsrc.split("/");
+        var showimgname = showimgsrc[showimgsrc.length-1];
+        $("#showpic").find("img").prop("src",showimgname);
+    });
+    </script>
+</body>
+</html>
