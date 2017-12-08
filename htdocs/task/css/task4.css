@@ -1,0 +1,72 @@
+body ,h1{
+    margin:0;
+    padding:0;
+}
+body {
+    background: #EFF0F4;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    height: 50px;
+    background: #5AC0CE;
+    color: #fff;
+    text-align: center;
+    /*padding:0 15px;*/
+    line-height: 50px;
+    position: relative;
+}
+.header .close {
+    position: absolute;
+    left:15px;
+}
+.header .register {
+    position: absolute;
+    right:15px;
+}
+.header a:link,.header a:visited,
+.header a:hover,.header a:active {
+    color: #fff;
+}
+.header h1 {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+.input {
+    height: 50px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.input input {
+    height: 50px;
+    width: 100%;
+    background:url("../images/login_03.png") no-repeat;
+    padding-left: 50px;
+    border:none;
+    outline: none;
+}
+.input:nth-child(2) input{
+    background: url("../images/login_06.png") no-repeat;
+}
+.wrap {
+    margin-top: 20px;
+}
+.login {
+    background: #5AC0CE;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    letter-spacing: 1em;
+    margin-top:10px;
+}
+.forget {
+    float: right;
+}
+.forget a:link,.forget a:visited,
+.forget a:hover,.forget a:active{
+    color:#5AC0CE;
+    font-size: 14px;
+}
