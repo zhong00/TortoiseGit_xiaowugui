@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body ,h1{
+        margin:0;
+        padding:0;
+    }
+    body {
+        background: #EFF0F4;
+    }
+    a {
+        text-decoration: none;
+    }
+    .header {
+        height: 50px;
+        background: #5AC0CE;
+        color: #fff;
+        text-align: center;
+        padding:0 15px;
+        line-height: 50px;
+    }
+    .header .close {
+        float: left;
+        /*width: 20%;*/
+    }
+    .header .register {
+        float: right;
+    }
+    .header a:link,.header a:visited,
+    .header a:hover,.header a:active {
+        color: #fff;
+    }
+    .header h1 {
+        font-size: 18px;
+        font-weight: bold;
+        /*margin-left: 20%;
+        margin-right: 20%;*/
+        display: inline-block;
+    }
+    .input {
+        height: 50px;
+        background-color: #fff;
+        margin-top: 10px;
+    }
+    .input input {
+        height: 50px;
+        width: 100%;
+        background:url("images/login_03.png") no-repeat;
+        padding-left: 50px;
+        border:none;
+        outline: none;
+    }
+    .input:nth-child(2) input{
+        background: url("images/login_06.png") no-repeat;
+    }
+    .wrap {
+        margin-top: 20px;
+    }
+    .login {
+        background: #5AC0CE;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        letter-spacing: 1em;
+        margin-top:10px;
+    }
+    .forget {
+        float: right;
+    }
+    .forget a:link,.forget a:visited,
+    .forget a:hover,.forget a:active{
+        color:#5AC0CE;
+        font-size: 14px;
+    }
+    </style>
+</head>
+<body>
+    <div class="header"><a href="" class="close">关闭</a><h1>登录</h1><a href="" class="register">注册</a>
+    </div>
+    <div class="wrap">
+        <div class="input"><input type="text" placeholder="请输入手机号"></div>
+        <div class="input"><input type="text" placeholder="请输入密码"></div>
+    </div>
+    <div class="login">登录</div>
+    <div class="forget"><a href="">忘记密码？</a></div>
+    <script>
+    var input = document.getElementsByClassName("input");
+    var input_el;
+    for(var i=0; i<input.length;i++){
+        focus(input[i]);
+        
+    }
+    function focus(ele){
+        input_el = ele.getElementsByTagName("input")[0];
+        input_el.oldvalue = input_el.placeholder;
+        input_el.onfocus = function(){
+            this.placeholder="";
+        }
+        input_el.onblur = function(){
+            this.placeholder=this.oldvalue;
+        }
+    }
+    
+    </script>
+</body>
+</html>
