@@ -1,0 +1,170 @@
+* {
+    margin:0;
+    padding:0;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background: #5AC0CE;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+header h1 {
+    font-size: 20px;
+    display: inline-block;
+    font-weight: normal;
+}
+header a {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top:6px;
+}
+header a:link,header a:visited,
+header a:hover,header a:active {
+    color: #fff;
+}
+.banner {
+    height: 163px;
+    width: 100%;
+    background: url(../images/bg2.png) no-repeat center top #ccc;
+    
+    background-size: 100% 100%;
+    color: #fff;
+    padding-top: 120px;
+}
+
+.banner img {
+    float: left;
+    margin: 0 40px;
+   
+}
+
+.wrap {
+    margin-bottom: 65px;
+    font-size: 12px;
+    line-height: 3rem;
+}
+
+.wrap dt {
+    color: #999;
+}
+
+.banner .name {
+    height: 85px;
+    float: left;
+    vertical-align: middle;
+    line-height: 40px;
+}
+.banner .name p {
+    /*float: left;*/
+}
+.banner .name p:nth-child(2){
+    background: url("../images/Shape4.png") no-repeat left;
+    padding-left: 20px;
+}
+
+.skill {
+    width: 90%;
+    margin:0 auto;
+}
+.wrap .wrap-title {
+    background: url("../images/line.png") no-repeat 10px 50%;
+    border-bottom: 1px solid #999;
+}
+.wrap h3 {
+    width: 90%;
+    margin:0 auto;
+    font-weight: normal;
+    font-size: 14px;
+}
+.skill>p {
+    line-height: 3rem;
+    vertical-align: middle;
+}
+.skill>p span {
+    background: url(../images/star.png) no-repeat left;
+    padding-left: 25px;
+    display: inline-block;
+    height: 3rem;
+    line-height: 3rem;
+    /*margin-left: 5px;*/
+}
+.skill>p span:nth-child(2){
+    margin-left: 20px;
+}
+.skill dl {
+    /*line-height: 2em;*/
+}
+.skill dl dt {
+    display: inline-block;
+    width: 20%;
+}
+.skill dl dd {
+    background: url("../images/bg-line.png") no-repeat center left;
+    display: inline-block;
+    width: 75%;
+    padding-left: 5px;
+}
+.skill dd.intro {
+    line-height: 2em;
+    vertical-align: middle;
+}
+.price {
+    color: red;
+}
+.connect {
+    position: fixed;
+    width: 100%;
+    bottom:5px;
+}
+.connect div{
+    border:2px solid #5AC0CE;
+    border-radius: 10px;
+    /*height: 4rem;*/
+    padding:10px;
+    text-align: center;
+}
+
+.connect .phone {
+    background: #5AC0CE;
+    color: #fff;
+    float: right;
+}
+
+.connect .note {
+    background: #fff;
+    color: #5AC0CE;
+    float: left;
+}
+@media screen and (min-width:300px) {
+    .connect .phone {
+        width: 41%;
+        margin-left: 3px;
+    }
+
+    .connect .note {
+        width: 41%;
+        margin-left: 3px;
+    }
+}
+
+@media screen and (max-width:300px) and(min-width: 160px;) {
+    .connect .phone {
+        width: 35%;
+    }
+
+    .connect .note {
+        width: 35%;
+    }
+}
