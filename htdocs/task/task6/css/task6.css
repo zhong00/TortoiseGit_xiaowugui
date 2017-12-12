@@ -1,0 +1,154 @@
+* {
+    margin:0;
+    padding:0;
+}
+a {
+    text-decoration: none;
+}
+header {
+    height: 50px;
+    background: #5AC0CE;
+}
+
+header .find {
+    width: 164px;
+    height: 42px;
+    margin:0 auto;
+    border:1px solid #51A8B4;
+    border-radius: 10px;
+    background: #51A8B4;
+}
+header .find a {
+    display: inline-block;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+}
+
+header .find a:link,header .find a:visited,
+header .find a:hover,header .find a:active{
+    color:#fff;
+}
+
+header .find a.active {
+    display: inline-block;
+    color: #5AC0CE;
+    background: #fff;
+    border:1px solid #fff;
+    border-radius: 10px;
+}
+
+header>a {
+    display: block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.menu {
+    height: 50px;
+    color: #A3A3A3;
+    text-align: center;
+    line-height: 50px;
+    border-bottom:1px solid #F3F3F3;
+}
+
+.menu>div {
+    width: 33%;
+    float: left;
+    background: url(../images/bg_line.png) no-repeat 80% 50%;
+
+}
+
+.triangle_down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #A3A3A3;
+    float: right;
+    margin-top:20px;
+}
+
+.floor {
+    height: 100px;
+    padding:20px;
+    border-bottom: 1px solid #F3F3F3;
+    line-height: 2rem;
+}
+.floor .info {
+    color: #999;
+    
+}
+.floor>p {
+    padding-left: 25px;
+}
+.floor .info:nth-child(1){
+    background: url(../images/date.png) no-repeat left;
+}
+
+.floor .info:nth-child(3){
+    background: url(../images/where.png) no-repeat left;
+}
+.floor>p a {
+    float: right;
+}
+
+.floor .price {
+    color: red;
+    font-size: 16px;
+    float: right;
+    margin-right: 1rem;
+}
+.container {
+    margin-bottom: 100px;
+}
+footer {
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid #F3F3F3;
+    position: fixed;
+    bottom: 0px;
+    color: #999;
+    background: #F9FAFC;
+}
+
+footer .wrap {
+    width: 70%;
+    height: 100px;
+    margin:0 auto;
+    text-align: center;
+}
+
+footer img {
+    display: block;
+}
+
+.wrap a:nth-child(1){
+    float: left;
+}
+.wrap a:nth-child(2){
+    float: right;
+}
+
+.wrap>a {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.write {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.wrap a:link, .wrap a:visited,
+.wrap a:hover,.wrap a:active{
+    color: #B5B5B5;
+}
+
+.wrap a.active:link,.wrap a.active:visited,
+.wrap a.active:hover,.wrap a.active:active {
+    color: #5AC0CE;
+}
