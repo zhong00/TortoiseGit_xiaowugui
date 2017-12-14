@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/task6.css">
-    <meta name="viewport" content="width=device-widt initial-scale=1.0"
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
         <a href="#"><img src="images/place.png" alt=""></a>
         <div class="find"><a href="">找雇主</a><a href="" class="active">找护工</a></div>
     </header>
-    <div class="menu">
-        <div class="place">所在地<div class="triangle_down"></div></div>
-        <div class="eat">食宿<div class="triangle_down"></div></div>
-        <div class="patient">病人情况<div class="triangle_down"></div></div>
+    <div class="containeer_fluid menu">
+        <div class="row">
+            <div class="place col-md-4" data-id="place">所在地<div class="triangle_down"></div></div>
+            <div class="eat col-md-4" data-id="eat">食宿<div class="triangle_down"></div></div>
+            <div class="patient col-md-4" data-id="patient"><!-- <a href="" class="drop-toggle"  data-toggle="dropdown"> -->病人情况<div class="triangle_down"></div><!-- <b class="caret"></b>
+            <ul class="dropdown-menu">
+                <li><a href="">miao</a></li>
+                <li><a href="">mi</a></li>
+            </ul>-->
+            </div>
+        </div>
     </div>
-    <div class="container">
+    <div class="container2">
         <div class="floor">
             <p class="info">服务日期</p>
             <p><span>2015-7-5至2015-7-12</span><a href=""><img src="images/more.png" alt=""></a><span class="price">25元/小时</span></p>
@@ -45,5 +55,54 @@
             <div class="write"><a href=""><img src="images/write1_03.jpg" alt=""></a></div>
         </div>
     </footer>
+    <div class="select">
+        <div class="s-cover"></div>
+        <div class="place" id="place">
+            <div class="header">
+                <span><a class="h-close" href="">关闭</a></span>
+                <span><a href="">完成</a></span>
+            </div>
+            <ul>
+                <li>通州</li>
+                <li class="active">朝阳</li>
+            </ul>
+        </div>
+        <div class="eat" id="eat">
+            <div class="header">
+                <span><a class="h-close" href="">关闭</a></span>
+                <span><a href="">完成</a></span>
+            </div>
+            <ul>
+                <li>食宿自理</li>
+                <li class="active">包食宿</li>
+            </ul>
+        </div>
+        <div class="patient" id="patient">
+            <div class="header">
+                <span><a class="h-close" href="">关闭</a></span>
+                <span><a href="">完成</a></span>
+            </div>
+            <ul>
+                <li>能自理</li>
+                <li class="active">不能自理</li>
+                <li>半失能</li>
+                <li>手术后</li>
+            </ul>
+        </div>
+    </div>
+
+<script>
+var $sub_menu =$(".menu .col-md-4 .triangle_down");
+$sub_menu.on("click",function(){
+    $(".select").css("display","block");
+    $(".s-cover").css({"display":"block","height":window.screen.height});
+    $("#"+$(this).parent().attr("data-id")).css("display","block");
+});
+$(".select .header a").on("click",function(){
+    $(".select").css("display","none");
+    $(".s-cover").css("display","none");
+    $(this).parent().parent().parent().css("display","none");
+})
+</script>
 </body>
 </html>

@@ -8,6 +8,7 @@ a {
 header {
     height: 50px;
     background: #5AC0CE;
+    width: 100%;
 }
 
 header .find {
@@ -53,7 +54,7 @@ header>a {
     border-bottom:1px solid #F3F3F3;
 }
 
-.menu>div {
+.menu .col-md-4 {
     width: 33%;
     float: left;
     background: url(../images/bg_line.png) no-repeat 80% 50%;
@@ -100,7 +101,7 @@ header>a {
     float: right;
     margin-right: 1rem;
 }
-.container {
+.container2 {
     margin-bottom: 100px;
 }
 footer {
@@ -152,3 +153,75 @@ footer img {
 .wrap a.active:hover,.wrap a.active:active {
     color: #5AC0CE;
 }
+.select {
+    display: none;
+    color: #B0B0B0;
+}
+.select .s-cover{
+    display: none;
+    position: fixed;
+    bottom:200px;
+    width: 100%;
+    z-index: 99;
+    background: #7f7f7f;
+    opacity: 0.7;
+}
+
+
+
+.select .place {
+    display: none;
+}
+
+.select .eat {
+    display: none;
+}
+.select .patient,.select .eat,.select .place {
+    display: none;
+    height: 200px;
+    background: #fff;
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+}
+.select .header{
+    height: 40px;
+    border-bottom: 1px solid #f3f3f3;
+    color: #EC8887;
+    line-height: 40px;
+}
+
+.header a:link,.header a:visited,
+.header a:hover,.header a:active {
+    color: #EC8887;
+    text-decoration: none;
+}
+
+.select .header span:nth-child(1){
+    float: left;
+    margin-left: 5px;
+}
+
+.select .header span:nth-child(2){
+    float: right;
+    margin-right: 5px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.select ul>li {
+    height: 40px;
+    line-height: 40px;
+}
+
+.select .active {
+    color: black;
+    border-top:1px solid #808080;
+    border-bottom:1px solid #a0a0a0;
+}
+
+
