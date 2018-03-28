@@ -1,0 +1,9 @@
+CREATE TABLE movie(
+id int(20) NOT NULL AUTO_INCREMENT,
+title VARCHAR(255) NOT NULL ,
+region VARCHAR(255),
+director VARCHAR(255),
+actors VARCHAR(255),
+rate FLOAT (20),
+PRIMARY KEY (id)
+)
