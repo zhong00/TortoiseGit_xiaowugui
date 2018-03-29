@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>movie</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <table class="table table-striped" id="showMovie">
+    <thead>
+        <tr>
+        <th>序号</th>
+        <th>名称</th>
+        <th>地区</th>
+        <th>导演</th>
+        <th>演员</th>
+        <th>评分</th>
+        <tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+    </table>
+</body>
+<script>
+$(document).ready(function($) {
+    $.ajax({
+        type:"GET",
+        dataType:"json",
+        url:"php/movie.php",
+        data:"{}",
+        success:function(data){
+            $("#showMovie").find("tbody").empty();
+            $.each(data,function(i,item){
+                $("#showMovie").find("tbody").append(
+                    "<tr><td>"+(i+1)+"</td>"+
+                    "<td>"+item.title+"</td>"+
+                    "<td>"+item.region+"</td>"+
+                    "<td>"+item.director+"</td>"+
+                    "<td>"+item.actors+"</td>"+
+                    "<td>"+item.rate+"</td></tr>")
+            })
+        },
+        error:function(XMLHttpRequest,textStatus,errorThrown){
+            alert(XMLHttpRequest+","+textStatus+","+errorThrown);
+        }
+    })
+});
+</script>
+</html>

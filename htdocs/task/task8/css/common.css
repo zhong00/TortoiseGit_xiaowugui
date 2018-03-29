@@ -1,0 +1,136 @@
+body {
+    background: #fafafa;
+    position: relative;
+}
+
+.g-wrap {
+    width: 80%;
+    margin:0 auto;
+}
+
+.g-top {
+    height: 40px;
+    line-height: 40px;
+    color: #1DB176;
+    font-size:14px;
+}
+
+.g-top .m-icon {
+    float: right;
+}
+
+.g-top .m-icon img {
+    float: left;
+    width: 16px;
+    height: 16px;
+    padding:5px;
+    margin: 7px 3px;
+    background: url(../image/o_.png) no-repeat center;
+}
+
+.g-menu {
+    height: 100px;
+    background: #1DB176;
+}
+
+.g-menu a{
+    display: block;
+    height: 96px;
+    line-height: 96px;
+    margin-top: 2px;
+    text-align: center;
+    border-bottom: 2px solid #1DB176;
+}
+
+.g-menu a.active {border-bottom: 2px solid #fff;}
+.g-menu a:link, .g-menu a:visited,
+.g-menu a:hover, .g-menu a:active{
+    color: #fff;
+}
+
+.g-menu ul {
+    float: right;
+}
+
+.g-menu li {
+    width: 100px;
+    float: left;
+}
+
+
+footer {
+    height: 160px;
+    background: #1DB176;
+    color: #fff;
+    position: absolute;
+    bottom: -220px;
+    padding-top: 40px;
+    width: 100%;
+}
+footer .g-wrap:after {
+    content: "clear";
+    clear:both;
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+}
+footer a:link,footer a:visited{
+    color: #fff;
+}
+
+footer a:hover,footer a:active{
+    color: black;
+}
+
+footer .m-left,footer .m-center {
+    width: 30%;
+    float: left;
+}
+footer .m-right {
+    width: 30%;
+    float: right;
+}
+footer .g-bottom {
+    clear:both;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    border-top: 1px solid #26C084;
+    line-height: 2em;
+}
+
+.m-left ul {
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.m-left li {
+    width: 5em;
+    float: left;
+}
+
+.m-center .wrap{
+    width: 80%;
+    margin:0 auto;
+}
+.m-center li {
+    width: 50%;
+    float: left;
+}
+
+.m-center ul {
+    margin-top: 20px;
+    line-height: 2em;
+    font-size: 14px;
+}
+
+.m-right {
+    text-align: center;
+}
+
+.m-right .name {
+    margin-bottom: 10px;
+}

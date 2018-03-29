@@ -1,0 +1,67 @@
+body {
+    background: #F0F0F0;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.g-top {
+    width: 100%;
+    height: 50px;
+    background: #29BDE0;
+    position: fixed;
+    top: 0;
+}
+
+.g-top .menu {
+    height: 50px;
+    width: 50px;
+    background: url(../image/t_menu.png) no-repeat center;
+    float: left;
+    margin-left: 5px;
+}
+.g-back ,.g-game {
+    width: 90%;
+    color: #AAAAAA;
+    text-align: center;
+    margin-top: 10px;
+}
+.g-back {
+    margin-top: 70px;
+    height:3rem;
+    line-height: 3rem;
+    background: #fff url(../image/s_back.png) no-repeat 96% 50%;
+}
+
+.g-back a:link,.g-back a:visited,
+.g-back a:hover,.g-back a:active {
+    color: #9C9C9C;
+}
+
+.g-game {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background: #fff url(../image/s_next.png) no-repeat 96% 50%;
+    margin-bottom: 2rem;
+}
+.g-game h3 {
+    height: 3rem;
+    line-height: 3rem;
+    width: 100%;
+    color: #FCC25B;
+    border-bottom: 2px solid #FDDA9C;
+    margin-bottom: 1rem;
+}
+
+.g-game .block {
+    height: 4em;
+    line-height: 4em;
+    width: 80%;
+    background: #69D1E9;
+    color: #fff;
+}
+
+.g-game p {
+    margin:10px;
+}

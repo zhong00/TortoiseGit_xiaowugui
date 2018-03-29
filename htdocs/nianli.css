@@ -7,18 +7,16 @@ body>div {
     margin:30px auto;
     background-color: #EAEAEA;
 }
-ul {
-    width:250px;
-    letter-spacing: -8px;
+table {
+    margin: auto;
 }
 
-li {
-    list-style-type: none;
+
+td {
     width: 49px;
     height: 49px;
     border:solid 1px #424242;
     margin: 10px 10px 0 0;
-    display: inline-block;
     background-color: #424242;
     letter-spacing: normal;
     text-align: center;

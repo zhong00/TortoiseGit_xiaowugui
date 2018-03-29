@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JaneShop</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/jquery.cookie.js"></script>
+    <style>
+    #fang{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left:410px;
+        top:0;
+        border-radius: 150px;
+        background-color: cornflowerblue;
+        overflow: hidden;
+        display:none;
+    }
+    #fang img {
+        height:1600px !important;
+        width:1600px !important;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    #lay {
+        position:absolute;
+        left: 0;
+        top:0;
+        border:1px solid #666;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+        background: #fff;
+        display:none;
+        cursor:move;
+    }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div class="contWidth">
+        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+        <div class="search">
+        <input type="text" id="inputSearch" class="" defaultValue="输入商品名称" value="输入商品名称" />
+        </div>
+        <ul id="skin">
+            <li id="skin1" data-color="#6fa686"></li>
+            <li id="skin2" data-color="rgb(108, 149, 118)"></li>
+            <li id="skin3" data-color="rgb(148, 170, 123)"></li>
+            <li id="skin4" data-color="rgb(155, 168, 121)"></li>
+        </ul>
+        <div class="mainNav" id="nav">
+            <ul>
+                <li><a href="janeshop.html">首页(点我）</a></li>
+                <li><a href="">品牌</a>
+                <div class="jnNav">
+                    <div class="subitem">
+                        <dl>
+                            <dt>标题1</dt>
+                            <dd><a href="">品牌1</a></dd>
+                            <dd><a href="">品牌2</a></dd>
+                            <dt>标题2</dt>
+                            <dd><a href="">品牌3</a></dd>
+                            <dd><a href="">品牌4</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                </li>
+                <li><a href="">女装</a>
+                <div class="jnNav">
+                    <div class="subitem">
+                        <dl>
+                            <dt>标题1</dt>
+                            <dd><a href="">品牌1</a></dd>
+                            <dd><a href="">品牌2</a></dd>
+                            <dt>标题2</dt>
+                            <dd><a href="">品牌3</a></dd>
+                            <dd><a href="">品牌4</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                </li>
+                <li><a href="">男装</a>
+                <div class="jnNav">
+                    <div class="subitem">
+                        <dl>
+                            <dt>标题1</dt>
+                            <dd><a href="">品牌1</a></dd>
+                            <dd><a href="">品牌2</a></dd>
+                            <dt>标题2</dt>
+                            <dd><a href="">品牌3</a></dd>
+                            <dd><a href="">品牌4</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                </li>
+                <li><a href="">鞋帽配饰</a>
+                <div class="jnNav">
+                    <div class="subitem">
+                        <dl>
+                            <dt>标题1</dt>
+                            <dd><a href="">品牌1</a></dd>
+                            <dd><a href="">品牌2</a></dd>
+                            <dt>标题2</dt>
+                            <dd><a href="">品牌3</a></dd>
+                            <dd><a href="">品牌4</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <div class="janeshop">
+        <div id="jnCatalog">
+            <h2 title="商品分类">商品分类</h2>
+            <div class="jnCatainfo">
+                <h3>推荐品牌</h3>
+                <ul>
+                    <li class="hot"><a href="">耐克</a></li>
+                    <li><a href="">阿迪达斯</a></li>
+                    <li><a href="">达芙妮</a></li>
+                    <li><a href="">李宁</a></li>
+                    <li><a href="">安踏</a></li>
+                    <li><a href="">奥康</a></li>
+                    <li><a href="">骆驼</a></li>
+                    <li><a href="">特步</a></li>
+                </ul>
+                <br class="clear" />
+                <h3>女鞋</h3>
+                <ul>
+                    <li><a href="">耐克</a></li>
+                    <li class="hot"><a href="">阿迪达斯</a></li>
+                    <li><a href="">达芙妮</a></li>
+                    <li><a href="">李宁</a></li>
+                    <li><a href="">安踏</a></li>
+                    <li><a href="">奥康</a></li>
+                    <li><a href="">骆驼</a></li>
+                    <li><a href="">特步</a></li>
+                </ul>
+                <br class="clear" />
+                <h3>男鞋</h3>
+                <ul>
+                    <li><a href="">耐克</a></li>
+                    <li><a href="">阿迪达斯</a></li>
+                    <li><a href="">达芙妮</a></li>
+                    <li><a href="">李宁</a></li>
+                    <li class="hot"><a href="">安踏</a></li>
+                    <li><a href="">奥康</a></li>
+                    <li><a href="">骆驼</a></li>
+                    <li><a href="">特步</a></li>
+                </ul>
+                <br class="clear" />
+                <h3>童鞋</h3>
+                <ul>
+                    <li><a href="">耐克</a></li>
+                    <li><a href="">阿迪达斯</a></li>
+                    <li><a href="">达芙妮</a></li>
+                    <li><a href="">李宁</a></li>
+                    <li><a href="">安踏</a></li>
+                    <li><a href="">奥康</a></li>
+                    <li><a href="">骆驼</a></li>
+                    <li><a href="">特步</a></li>
+                </ul>
+                <br class="clear" />
+            </div>
+        </div>
+        <div id="jnProitem">
+            <div class="showPic"><img src="images/shirt1.jpg" alt="">
+                <div id="lay"></div>
+                <div id="fang"><img src="images/shirt1b.jpg" alt=""></div>
+            </div>
+            <ul class="pic">
+                <li><img src="images/shirt1_.jpg" alt=""></li>
+                <li><img src="images/shirt2_.jpg" alt=""></li>
+                <li><img src="images/shirt3_.jpg" alt=""></li>
+            </ul>
+            <div class="info">
+                <ul>
+                    <li class="selected">产品属性</li>
+                    <li>产品尺码表</li>
+                    <li>产品介绍</li>
+                </ul>
+                <div class="infoTab">
+                    <div class="selected">沿用风靡百年的经典全棉牛津面料，通过领先的液氢整理技术，使面料的抗皱性能更上一层。延续简约、舒适、健康设计理念，特推出免烫易打理的精细免烫牛津长袖衬衫系列。</div>
+                    <div>
+                    <table>
+                        <thead><tr><td>#</td><td>170</td><td>175</td><td>180</td><td>185</td></tr></thead>
+                        <tbody>
+                            <tr><td>60kg</td><td>M</td><td>L</td><td>L</td><td>XL</td></tr>
+                            <tr><td>70kg</td><td>L</td><td>XL</td><td>XL</td><td>XXL</td></tr>
+                            <tr><td>80kg</td><td>XL</td><td>XXL</td><td>XXL</td><td>XXXL</td></tr>
+                            <tr><td>85kg</td><td>XL</td><td>XXL</td><td>XXL</td><td>XXXL</td></tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div>免烫牛津长袖衬衫</div>
+                </div>
+            </div>
+        </div>
+        <div id="jnDetails">
+            <h4>免烫高支棉条纹衬衣</h4>
+            <p>全新精品高支棉衬衫再次提升品质，精选100%新疆长绒棉织造而成，平整度好，短绒少；80-100高支双股经纬交织，带来无与伦比的舒适享受；而且面料反光效果好，具有漂亮的光泽，质感上佳，有利于面汤效果的维持！</p>
+            <p class="price">价格：<span>370.00</span>元</p>
+            <p class="promo">促销：<span>200.00</span>元</p>
+            <div class="color">颜色：<span class="selected">蓝</span><span style="display:none;">白</span><span style="display:none;">黑</span>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="size">尺寸：<span>未选择</span>
+                <ul>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                    <li>XXL</li>
+                    <li>XXXL</li>
+                </ul>
+            </div>
+            <div class="num">数量：
+                <select>
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                </select>
+            </div>
+            <p class="cost">总计：<span>200</span>元</p>
+            <!--<p class="score">给商品评分：<span></span></p>-->
+            <p class="add"><button>加入购物车</button></p>
+        </div>
+    </div>
+</div>
+<div id="footer">&copy;版权所有</div>
+<script>
+$(document).ready(function(){
+    //换肤
+    function switchSkin(color){
+        $("#header .contWidth").css("backgroundColor",color);
+        $.cookie("myskin",color,{path:'/',expires:10});
+    }
+   var cookie_skin = $.cookie("myskin");
+   if(cookie_skin){
+        switchSkin(cookie_skin);
+   }
+    $("#skin li").click(function(){
+        switchSkin($(this).data("color"));
+    });
+    
+    $(".jnNav").css("display","none");
+    $("#nav li").hover(function(){
+        $(this).find(".jnNav").css("display","block");
+    },function(){
+        $(this).find(".jnNav").css("display","none");
+    });
+    $("#jnImageroll a").click(function(){
+        $("#jnImageroll").animate({backgroundPositionX:-780*($(this).index())+"px"});
+        $(this).addClass("selected").find(".angle").css("display","block").parent().siblings().removeClass("selected").find(".angle").css("display","none");
+        return false;
+    });
+    $("#jnBrand .jnBrandTitle li").click(function(){
+        $(this).addClass("selected").find(".angle").css("display","block").parent().siblings("li").removeClass("selected").find(".angle").css("display","none");
+        $(".jnBrandContent .jnBrandTab:eq("+$(this).index()+")").css("display","block").siblings().css("display","none");
+    });
+    $("#jnProitem .pic li img").click(function(){
+        var name = $(this).attr("src").split(".")[0];
+        $("#jnProitem .showPic img").attr("src",name.substring(0,name.length-1)+".jpg");
+    });
+    var scale = 4;
+    $("#lay").width("100px").height("100px");
+
+    $("#jnProitem .showPic").mouseover(function(){
+        $("#fang").show();
+        $("#lay").show();
+    }).mouseout(function(){
+        $("#fang").hide();
+        $("#lay").hide();
+    }).mousemove(function(e){
+        e = e || event;
+        var x = e.clientX - $(this).offset().left-$("#lay").width()/2;
+        var y = e.clientY - $(this).offset().top-$("#lay").height()/2;
+        if(x<=0) x=0;
+        if(y<=0) y=0;
+        if(x>($(this).width()-$("#lay").width())) x=$(this).width()-$("#lay").width();
+        if(y>($(this).height()-$("#lay").height())) y=$(this).height()-$("#lay").height();
+        $("#lay").css({"left":x+"px","top":y+"px"});
+        $("#fang img").css({"top":-y*4+"px","left":-x*4+"px"});
+    });
+    $("#jnProitem .info ul>li").click(function(){
+        $(this).addClass("selected").siblings().removeClass("selected");
+        $("#jnProitem .infoTab div:nth-child("+($(this).index()+1)+")").css("display","block").siblings().css("display","none");
+    });
+    //hot
+    $("#content .jnCatainfo .hot").append("<img src='images/hot.gif' />");
+    //搜索框
+    $("#inputSearch").focus(function(){
+        if(this.defaultValue===$(this).val()){
+            $(this).val("");
+        }
+    }).blur(function(){
+        if($(this).val()==""){
+            $(this).val(this.defaultValue);
+        }
+    }).keyup(function(e){
+        if(e.which==13){
+            alert("搜索"+$(this).val());
+        }
+    })
+    $("#jnDetails .color ul>li").click(function(){
+        $("#jnDetails .color span:nth-child("+($(this).index()+1)+")").css("display","inline-block").addClass("selected").siblings("span").css("display","none").removeClass("selected");
+    });
+    $("#jnDetails .size ul>li").click(function(){
+        $("#jnDetails .size span").text($(this).text());
+    });
+    $("#jnDetails .num select").change(function(){
+        $("#jnDetails .cost span").text($(this).val()*200);
+    });
+    $("#jnDetails .add").click(function(){
+        var x ="确认购买\n";
+        x+=$("#jnDetails h4:nth-child(1)").text()+"\n";
+        x+= "单价："+$("#jnDetails .promo span").text()+"\n";
+        x+= "颜色："+$("#jnDetails .color").find(".selected").text()+"\n";
+        x+= "尺寸："+$("#jnDetails .size span").text()+"\n";
+        x+= "数量："+$("#jnDetails .num select").val()+"\n";
+        x+= "总价："+$("#jnDetails .cost span").text()+"\n";
+        alert(x);
+    })
+
+})
+
+</script>
+</body>
+</html>

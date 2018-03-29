@@ -1,0 +1,154 @@
+.g-top {
+    height: 50px;
+    width: 100%;
+    background: #29BDE0;
+    border:1px solid rgb(76,200,229);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top:0;
+    z-index: 99;
+}
+
+.g-top h2 {
+    font-size: 18px;
+    font-weight: normal;
+    height: 50px;
+    line-height: 50px;
+}
+
+.g-top .home {
+    position: absolute;
+    left: 5px;
+    height: 50px;
+    width: 50px;
+    background: url(../image/r_home1.png) no-repeat center;
+}
+
+.g-top .tip {
+    position: absolute;
+    right: 5px;
+    top:0;
+    height: 50px;
+    width: 50px;
+    background: url(../image/r_tips1.png) no-repeat center,url(../image/r_tips2.png) no-repeat center;
+}
+.g-res {
+    margin-top: 50px;
+    background: #29BDE0;
+    padding:10px 0;
+}
+.m-pic {
+    position: relative;
+    height: 102px;
+    width: 176px;
+    margin:0 auto;
+    background: url(../image/r_cup.png) no-repeat 50% 40%,url(../image/r_success.png) no-repeat center;
+}
+
+.m-pic p {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 55px;
+    font-weight: bold;
+}
+
+.g-res .success {
+    width: 80%;
+    margin:0 auto;
+    line-height: 2rem;
+    color: #FFC865;
+    font-weight: bold;
+}
+
+.g-res .m-detail {
+    color: #fff;
+    width: 80%;
+    margin:0 auto;
+}
+
+.m-detail table {
+    /*width: 80%;*/
+}
+.m-detail td:nth-child(odd) {
+    width: 3rem;
+    text-align: justify;
+    text-align-last:justify;
+}
+.m-detail td:nth-child(even) {
+    width: 2rem;
+}
+
+.g-everyday {
+    margin-bottom: 50px;
+}
+.g-everyday .wrap {
+    border-bottom: 1px solid #A6A6A6;
+}
+.m-everyday {
+    width: 80%;
+    margin:10px auto;
+}
+
+.m-everyday h3 {
+    color: #5A5A5A;
+    font-weight: normal;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.m-everyday .time {
+    float: right;
+    font-size: 14px;
+}
+
+.m-everyday p {
+    color: #A6A6A6;
+}
+
+.footer {
+    background: rgba(153,223,240,0.9);
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .wrap {
+    width: 80%;
+    margin:5px auto;
+}
+
+.footer .play {
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    background: #F66F6F;
+    border:1px solid #F66F6F;
+    border-radius: 10px;
+}
+
+.footer .share {
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    background: #FBB435;
+    border:1px solid #FBB435;
+    border-radius: 10px;
+}
+
+.footer a {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+}
+
+.footer a:link, .footer a:visited,
+.footer a:hover, .footer a:active{
+    color: #fff;
+}

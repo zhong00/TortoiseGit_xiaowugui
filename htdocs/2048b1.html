@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2048小游戏</title>
+    <style>
+        * {
+            margin: 0;
+            padding:0;
+        }
+        body {
+            background-color: rgb(250,248,239);
+            font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+        }
+        .wrapper {
+            width: 483px;
+            margin: 20px auto;
+        }
+        .header {
+            color: rgb(119,110,101);
+        }
+        .header .part1 h1{
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .header .part1 .score-block{
+            padding:10px;
+            background-color: rgb(187,173,160);
+            float: right;
+            color: white;
+            text-align: center;
+            margin-right: 5px;
+            border-radius:5px;
+            font-weight: bold;
+        }
+        .header .part1 .score-block .title {
+            color:rgb(238,228,218);
+        }
+        .header .part2 .new{
+            padding:10px;
+            background-color: rgb(119,110,101);
+            color:#fff;
+            float: right;
+            border-radius:5px;
+            font-weight: bold;
+            cursor:pointer;
+        }
+        .header .part2{
+            margin-top: 20px;
+        }
+        .header .part2 p {
+            line-height: 1.5em;
+        }
+        #game {
+            margin-top: 20px;
+        }
+        #game table{
+            width: 483px;
+            height: 483px;
+            border-spacing: 15px;
+            border-radius:10px;
+            background-color: rgb(187,173,160);
+            cellpadding:0;
+        }
+        #game td{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(205,193,180);
+
+            border-radius:2px;
+        }
+        #game td p {
+            line-height: 100px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 42px;
+            font-weight: bold;
+            color:#fff;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="part1">
+            <div class="score-block">
+                <p class="title">最高</p>
+                <p class="score" id="maxScore">0</p>
+            </div>
+            <div class="score-block">
+                <p class="title">分数</p>
+                <p class="score" id="score">0</p>
+            </div>
+            <h1>2048</h1>
+        </div>
+        <div class="part2">
+            <div class="new" id="newGame">新游戏</div>
+            <p><strong>2048在线游戏</strong></p>
+            <p>按上下左右键合并数字最终得到<strong>2048</strong>赢！</p>
+        </div>
+    </div>
+    <div id="game">
+        <table>
+            <tr><td data-id="1"></td><td data-id="2"></td><td data-id="3"></td><td data-id="4"></td></tr>
+            <tr><td data-id="5"></td><td data-id="6"></td><td data-id="7"></td><td data-id="8"></td></tr>
+            <tr><td data-id="9"></td><td data-id="10"></td><td data-id="11"></td><td data-id="12"></td></tr>
+            <tr><td data-id="13"></td><td data-id="14"></td><td data-id="15"></td><td data-id="16"></td></tr>
+        </table>
+    </div>
+</div>
+<script>
+var table = document.getElementById("game");
+var tableCell = table.getElementsByTagName("td");
+var score = 0;
+var maxScore = 0;
+var scoreBlock = document.getElementById("score");
+var maxScoreBlock = document.getElementById("maxScore");
+var newGameBlock = document.getElementById("newGame");
+//设置颜色
+function setColor(){
+    var color;
+    for(var i=0;i<tableCell.length;i++){
+        if(!blockIsEmpty(tableCell[i])){
+            color = parseInt(getBlockNum(tableCell[i])*20).toString(16).toString();
+            while(color.length<6){
+                color = "0"+color;
+            }
+            console.log(color);
+            tableCell[i].style.backgroundColor = "#"+color;
+        } else tableCell[i].style.backgroundColor = "#cdc1b4";
+    }
+}
+
+// 返回从1～12中随机的两个数组成的数组
+function get2In12(){
+    var num1 = Math.floor(Math.random()*12+1);
+    do{
+        var num2 = Math.floor(Math.random()*12+1);
+    } while (num1===num2)
+    return new Array(num1,num2);
+}
+//返回数组中随机一个值
+function get1inTotal(list){
+    return list[Math.floor(Math.random()*list.length)];
+}
+// 返回数字2或者4
+function getNewNum(){
+    var nums = [2,4];
+    var index = Math.floor(Math.random()*2);
+    return nums[index];
+}
+//返回所有空格子里随机一个的id
+function get1InEmpty(){
+    var emptyBlocks = new Array();
+    for(var i=0;i<tableCell.length;i++){
+        var tableCellP = tableCell[i].getElementsByTagName("p");
+        if(tableCellP.length===0){
+            emptyBlocks.push(tableCell[i].dataset.id);
+        }
+    }
+    return get1inTotal(emptyBlocks);
+}
+//返回此id的元素
+function getElementByDataId(id){
+    for(var i=0;i<tableCell.length;i++){
+        if(parseInt(tableCell[i].dataset.id) === parseInt(id)){
+            return tableCell[i];
+        }
+    }
+}
+//在这个id的元素下增加数字块
+function buildBlock(id){
+    var el = document.createElement("p");
+    var text = document.createTextNode(getNewNum());
+    el.appendChild(text);
+    var newCell = getElementByDataId(id);
+    newCell.appendChild(el);
+}
+//初始
+function init(){
+    var ids = get2In12();
+    var id1 = ids[0],
+        id2 = ids[1];
+    buildBlock(id1);
+    buildBlock(id2);
+}
+window.onload = function(){
+    init();
+    setColor();
+};
+//返回二维数组,direction=1纵向列 =0横向行，order=1正序 =-1倒序
+function getlists(direction,order){
+    var lists = new Array();
+    var subList = new Array();
+    if(direction===1){
+        for(var j=1;j<5;j++){
+            subList = [];
+            for(var i = 0;i<4;i++){
+                subList.push(getElementByDataId(4*i+j));
+            }
+            if(order<0) subList.reverse();
+            lists.push(subList);
+        }
+    }
+    if(direction===0){
+        for(var j=0;j<4;j++){
+            subList = [];
+            for(var i = 1;i<5;i++){
+                subList.push(getElementByDataId(4*j+i));
+            }
+            if(order<0) subList.reverse();
+            lists.push(subList);
+        }
+    }
+    console.log("getlists");
+    // for(var m=0;m<4;m++){
+    //     for(var n=0;n<4;n++){
+    //         console.log(lists[m][n]);
+    //     }
+    // }
+    return lists;
+}
+
+//判断单元格为空
+function blockIsEmpty(td){
+    return !(td.getElementsByTagName("p").length);
+}
+//下一个非空单元格的索引
+function getNextNumIndex(list,i){
+    for(var m=i+1;m<list.length;m++){
+        if(!blockIsEmpty(list[m])){
+            return m;
+        }
+    }
+}
+//取单元格数字
+function getBlockNum(td){
+    var blockOfP = td.getElementsByTagName("p");
+    if(blockOfP.length){
+        return blockOfP[0].innerHTML;
+    }
+}
+//设单元格数字
+function setBlockNum(td){
+    var blockOfP = td.getElementsByTagName("p");
+    if(blockOfP.length){
+        blockOfP[0].innerHTML=parseInt(blockOfP[0].innerHTML)*2;
+    }
+}
+//删除单元格数字
+function clearBlock(td){
+    var blockOfP = td.getElementsByTagName("p");
+    if(blockOfP.length){
+        td.removeChild(blockOfP[0]);
+    }
+}
+var flagString;
+//判断元素数组是否有空白
+function isEmpty(list){
+    var flagList = [];
+    for(var i=0;i<list.length;i++){
+        flagList.push(Number(blockIsEmpty(list[i])));
+    }
+    flagString = flagList.join("");
+    var x = /1+0+/;
+    console.log("Step3-1判断是否有空白填补"+flagString+","+list+"isEmpty?"+x.test(flagString));
+    return x.test(flagString);
+}
+//判断元素数组是否有可相加的
+function needSum(list){
+    for(var i=0;i<list.length-1;i++){
+        var iNext = parseInt(getNextNumIndex(list,i));
+        console.log("Step2-1 判断元素数组是否有可相加的，判断index"+i+"下一个非空单元格的索引"+iNext);
+        if((!blockIsEmpty(list[i]))&&iNext&&getBlockNum(list[i])==getBlockNum(list[iNext])){
+            console.log(i+"和"+iNext+"需要相加");
+            return true;
+        }
+    }
+}
+//相邻的相加
+function add(list){
+    var j =0;
+    do{
+        var jNext = parseInt(getNextNumIndex(list,j));
+        console.log("Step2-2需要相加，开始相加，处理index"+j+"下一个非空单元格的索引"+jNext);
+        if((jNext&&!blockIsEmpty(list[j]))&&getBlockNum(list[j])==getBlockNum(list[jNext])){
+            score = getBlockNum(list[j])*2+score;//加分
+            setBlockNum(list[j]);
+            clearBlock(list[jNext]);
+            console.log(j+"和"+jNext+"相加了");
+            j=jNext+1;
+        } else j++;
+    } while(j<list.length-1)
+}
+//填补空白单元格
+function fillEmpty(list){
+    var x = /1+0/;
+    var emptyIndex =flagString.search(x);
+    var blockIndex = flagString.indexOf("0",emptyIndex);
+    list[emptyIndex].appendChild(list[blockIndex].getElementsByTagName("p")[0]);
+    console.log("Step3-2填补空白"+emptyIndex+"添加了"+blockIndex+"的子元素");
+}
+
+//判断全部满了
+function isFull(){
+    var n=0;
+    for(var i=0;i<tableCell.length;i++){
+        if(blockIsEmpty(tableCell[i])) n++;
+        console.log("满了吗"+n);
+    }
+    if(n===0) return true;
+}
+document.onkeydown =function(e){
+    var lists = [];
+    var m;
+    //向下
+    if(e.keyCode===40){
+        console.log("----------按了下键");
+        m=0;
+        console.log("Step1: 取所有单元格");
+        lists = getlists(1,-1);
+        for(var i=0;i<4;i++){
+            console.log("----处理第"+i+"行/列");
+            if(needSum(lists[i])){
+                add(lists[i]);
+                m++
+            }
+            while(isEmpty(lists[i])){
+                fillEmpty(lists[i]);
+                lists = getlists(1,-1);
+                m++;
+            }
+        }
+        if(m>0){
+            buildBlock(get1InEmpty());
+        }
+        setColor();
+        if(isFull()&&m===0) alert("输啦！");
+    }
+    //向右
+    if(e.keyCode===39){
+        console.log("----------按了右键");
+        m=0;
+        console.log("Step1: 取所有单元格");
+        lists = getlists(0,-1);
+        for(var i=0;i<4;i++){
+            console.log("----处理第"+i+"行/列");
+            if(needSum(lists[i])){
+                add(lists[i]);
+                m++
+            }
+            while(isEmpty(lists[i])){
+                fillEmpty(lists[i]);
+                lists = getlists(0,-1);
+                m++;
+            }
+        }
+        if(m>0){
+            buildBlock(get1InEmpty());
+        }
+        setColor();
+        if(isFull()&&m===0) alert("输啦！");
+    }
+    //向上
+    if(e.keyCode===38){
+        console.log("----------按了上键");
+        m=0;
+        console.log("Step1: 取所有单元格");
+        lists = getlists(1,1);
+        for(var i=0;i<4;i++){
+            console.log("----处理第"+i+"行/列");
+            if(needSum(lists[i])){
+                add(lists[i]);
+                m++
+            }
+            while(isEmpty(lists[i])){
+                fillEmpty(lists[i]);
+                lists = getlists(1,1);
+                m++;
+            }
+        }
+        if(m>0){
+            buildBlock(get1InEmpty());
+        }
+        setColor();
+        if(isFull()&&m===0) alert("输啦！");
+    }
+    //向左
+    if(e.keyCode===37){
+        console.log("----------按了左键");
+        m=0;
+        console.log("Step1: 取所有单元格");
+        lists = getlists(0,1);
+        for(var i=0;i<4;i++){
+            console.log("----处理第"+i+"行/列");
+            if(needSum(lists[i])){
+                add(lists[i]);
+                m++
+            }
+            while(isEmpty(lists[i])){
+                fillEmpty(lists[i]);
+                lists = getlists(0,1);
+                m++;
+            }
+        }
+        if(m>0){
+            buildBlock(get1InEmpty());
+        }
+        setColor();
+        if(isFull()&&m===0) alert("输啦！");
+    }
+    scoreBlock.innerHTML=score;
+    if(score>maxScore) maxScore=score;
+    maxScoreBlock.innerHTML = maxScore;
+};
+newGameBlock.onclick = function(){
+    for(var i=0;i<tableCell.length;i++){
+        clearBlock(tableCell[i]);
+    }
+    score = 0;
+    scoreBlock.innerHTML = score;
+    init();
+    setColor();
+}
+</script>
+</body>
+</html>

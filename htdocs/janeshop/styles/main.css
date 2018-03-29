@@ -1,0 +1,420 @@
+#header .contWidth {
+    background-color:#eee;
+}
+
+#header .logo {
+    width:140px;
+    float:left;
+    margin:18px;
+}
+
+#header .search{
+    width: 250px;
+    float: left;
+    margin:30px;
+
+}
+#header #inputSearch {
+    height: 30px;
+    width: 250px;
+}
+#header #skin {
+    width: 100px;
+    float:right;
+    margin:40px 100px ; 
+}
+
+#skin li {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-image: url(../images/skin.png);
+    margin-left: 5px;
+}
+#skin2 {background-position: -20px 0;}
+#skin3 {background-position: -40px 0;}
+#skin4 {background-position: -60px 0;}
+#skin1.selected {background-position: -80px 0;}
+#skin2.selected {background-position: -100px 0;}
+#skin3.selected {background-position: -120px 0;}
+#skin4.selected {background-position: -160px 0;}
+
+#nav {
+    clear: both;
+}
+#nav {
+    height: 50px;
+    background-color: #888;
+}
+#nav ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+#nav li{
+    width: 100px;
+    float: left;
+    position:relative;
+}
+
+#nav li>a {
+    display:block;
+    line-height: 50px;
+    text-align: center;
+}
+
+.jnNav{
+    text-align: center;
+    position:absolute;
+    width: 100px;
+    top:50px;
+    left: 0;
+    z-index: 99;
+}
+
+.subitem {
+    background-color: #666;
+    line-height:2em;
+    padding:5px;
+}
+.jnNav dt {
+    border-bottom: 1px solid #222;
+    font-size: 1.3em;
+}
+#content:after {
+    content:"";
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+}
+.janeshop {
+    clear:both;
+    margin:10px auto;
+    width: 1200px;
+}
+.janeshop:after {
+    content:"";
+    display:block;
+    clear:both;
+    overflow:hidden;
+    height:0;
+}
+.janeshop h2 {
+    line-height:30px;
+    height: 30px;
+    background-color: #888;
+    color: #fff;
+    padding:0 10px;
+}
+
+.janeshop #jnCatalog {
+    width: 200px;
+    float:left;
+    text-align:left;
+    border:1px solid #000;
+}
+.janeshop .jnCatainfo {
+    padding:10px;
+}
+
+.jnCatainfo h3 {
+    border-bottom: 1px dotted #000;
+    margin:10px 0;
+}
+
+.jnCatainfo li {
+    width: 50%;
+    float:left;
+}
+
+#jnImageroll {
+    height: 476px;
+    width: 780px;
+    overflow: hidden;
+    margin-left:10px;
+    float: left;
+    position: relative;
+    background-image: url(../images/banner_3.jpg);
+}
+
+#jnImageroll p {
+    width: 780px;
+    height: 4em;
+    position: absolute;
+    bottom:0;
+    left:0;
+    background:rgba(66,66,66,0.7);
+}
+
+#jnImageroll p a {
+    padding:0.5em 0;
+    border-right: 1px solid #aaa;
+    display: block;
+    float:left;
+    width: 155px;
+    text-align: center;
+    color:#fff;
+    position: relative;
+}
+#jnImageroll p a.selected {
+    background: #888;
+}
+#jnImageroll .angle {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-width:5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+#jnNotice {
+    width: 200px;
+    float: right;
+}
+
+#jnNotice .news {
+    margin-top: 20px;
+}
+#jnNotice .news li{
+    position: relative;
+}
+#jnNotice .news .xnews{
+    position: absolute;
+    border:1px solid #000;
+    background: #f7f5d1;
+    z-index: 99;
+}
+#jnNotice .news h4 {
+    padding-bottom: 10px;
+    margin:10px 0;
+    border-bottom:1px dotted #000;
+}
+#jnNotice .news a{
+    display: block;
+    height: 2em;
+    line-height: 2em;
+}
+
+#jnBrand {
+    clear: both;
+    margin-top: 30px;
+    margin-left: 210px;
+}
+
+.jnBrandTitle {
+    height: 30px;
+    border-bottom: 1px dotted #000;
+}
+.jnBrandTitle h3 {
+    line-height: 30px;
+    width: 200px;
+    float: left;
+}
+.jnBrandTitle ul {
+    width: 255px;
+    float: right;
+}
+.jnBrandTitle ul li {
+    width: 50px;
+    height: 20px;
+    float: left;
+    padding:5px;
+    margin-right: 5px;
+    background-color: #eee;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.jnBrandTitle ul li:last-child {
+    margin-right: 0;
+}
+.jnBrandTitle ul li.selected {
+    background: #888;
+}
+.jnBrandTitle ul .angle {
+    height: 0;
+    width: 0;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    top: 30px;
+    left: 27px;
+    border-color: #888 transparent transparent transparent;
+} 
+
+}
+.jnBrandTitle:after {
+    content:"";
+    height: 0;
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+.jnBrandContent{
+    margin-top: 20px;
+}
+.jnBrandContent:after {
+    content: "";
+    height: 0;
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+#jnBrand .jnBrandImg {
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+}
+#jnBrand .jnBrandImg img {
+    width: 240px;
+    height: 200px;
+}
+#jnBrand .jnBrandImg p {
+    background: #aaa;
+}
+#jnBrand .jnBrandImg:last-child {
+    margin-right: 0;
+}
+
+#jnProitem {
+    width:400px;
+    margin-left: 10px;
+    float: left;
+}
+
+#jnProitem .showPic {
+    position:relative;
+}
+
+#jnProitem .showPic img {
+    width:398px;
+    height: 398px;
+    border: 1px solid #aaa;
+}
+
+#jnProitem .showPic p {
+    width: 100px;
+    margin:0 auto;
+    padding:5px;
+    border: 1px solid #000;
+    border-radius:25px;
+}
+
+#jnProitem .pic li{
+    float: left;
+}
+#jnProitem .info {
+    clear: both;
+}
+#jnProitem .info li {
+    float: left;
+    background: #aaa;
+    padding:5px;
+    color:#fff;
+    margin-right: 10px;
+    border:1px solid #aaa;
+    border-bottom: none;
+}
+#jnProitem .info li.selected {
+    background: #666;
+}
+#jnProitem .infoTab {
+    clear:both;
+    border:1px solid #aaa;
+    line-height: 2em;
+    padding:10px;
+}
+#jnProitem .infoTab div {
+    display: none;
+}
+#jnProitem .infoTab .selected {
+    display: block;
+}
+#jnProitem .infoTab table{
+    border-collapse: collapse;
+}
+#jnProitem .infoTab table tbody tr:nth-child(2n+1){
+    background-color: #eee;
+}
+#jnProitem .infoTab table, #jnProitem .infoTab th,#jnProitem .infoTab td{
+    border :1px solid #aaa;
+    text-align: center;
+    padding:5px;
+}
+#jnDetails {
+    width: 578px;
+    float: left;
+    margin-left: 10px;
+}
+#jnDetails>div,#jnDetails>p {
+    margin:15px 0;
+}
+#jnDetails>div ul:after {
+    height: 0;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    content:"";
+}
+#jnDetails .price span {
+    text-decoration: line-through;
+}
+#jnDetails .promo span {
+    color:red;
+    font-size:150%;
+}
+#jnDetails .color li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    border:1px solid #888;
+    margin-right: 10px;
+}
+#jnDetails .color li:nth-child(1){
+    background-color: #d3dcf8;
+}
+#jnDetails .color li:nth-child(2){
+    background-color: #fff;
+}
+#jnDetails .color li:nth-child(3){
+    background-color: #000;
+}
+#jnDetails .size {
+    clear:both;
+}
+#jnDetails .size li {
+    padding:5px;
+    border:1px solid #888;
+    float: left;
+    margin-right: 10px;
+}
+#jnDetails .num {
+    clear:both;
+}
+#jnDetails .cost span{
+    font-size: 150%;
+}
+#footer {
+    height: 30px;
+    background: #222;
+    text-align: center;
+    margin-top: 30px;
+    color:#fff;
+    line-height: 30px;
+    position: fixed;
+    bottom: 5px;
+    width:100%;
+}
+
+#content li {
+    cursor: pointer;
+}
+
+#jnDetails .add button {
+    padding:10px;
+}

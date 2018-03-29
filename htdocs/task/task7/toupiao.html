@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/toupiao.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="g-top">
+<a href="" class="home"></a><h2>投票</h2><a class="tip"></a>
+</div>
+<div class="g-tip">
+    <p>发言讨论结束，大家请投票<span class="play"><audio src="好久不见.mp3" autoplay="autoplay"></audio></span></p>
+    <p>点击得票数最多人的头像</p>
+</div>
+<div class="g-member">
+    <div class="row">
+    <div class="wrap">
+        <div class="m-member">
+        <p>水民</p>
+        <p>1号</p>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="m-member">
+        <p>水民</p>
+        <p>2号</p>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="m-member">
+        <p>警察</p>
+        <p>3号</p>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="wrap">
+            <img src="image/hover.png" alt="">
+        </div>
+        <div class="wrap">
+            <img src="image/hover.png" alt="">
+        </div>
+        <div class="wrap">
+            <img src="image/hover.png" alt="">
+        </div>
+    </div>
+    <div class="row">
+    <div class="wrap">
+        <div class="m-member">
+        <p>法官</p>
+        <p>4号</p>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="m-member">
+        <p>狙击手</p>
+        <p>5号</p>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="m-member">
+        <p>医生</p>
+        <p>6号</p>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="wrap">
+            <img src="image/hover.png" alt="">
+        </div>
+        <div class="wrap">
+            <img src="image/hover.png" alt="">
+        </div>
+        <div class="wrap">
+            <img src="image/hover.png" alt="">
+        </div>
+    </div>
+    <div class="row">
+    <div class="wrap">
+        <div class="m-member">
+        <p>杀手</p>
+        <p>7号</p>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="m-member">
+        <p>水民</p>
+        <p>8号</p>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="m-member">
+        <p>水民</p>
+        <p>9号</p>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="wrap">
+            <img src="image/hover.png" alt="">
+        </div>
+        <div class="wrap">
+            <img src="image/hover.png" alt="">
+        </div>
+        <div class="wrap">
+            <img src="image/hover.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="vote"><div class="wrap"><a href="result.html">投死 (点我）</a></div></div>
+<script>
+    var i;
+    $(".m-member").on("mouseover",function () {
+        i=$(this).parent().index();
+        $(this).parent().parent().next().find(".wrap:eq("+i+")").css("visibility","visible");
+    }).on("mouseout",function(){
+        i=$(this).parent().index();
+        $(this).parent().parent().next().find(".wrap:eq("+i+")").css("visibility","hidden");
+    });
+    
+</script>
+</body>
+</html>

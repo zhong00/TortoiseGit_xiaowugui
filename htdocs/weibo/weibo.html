@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    body {
+        margin:0;
+    }
+    a {
+        text-decoration: none;
+    }
+     
+    /*顶部*/
+    .top {
+        height: 50px;
+        width: 100%;
+        min-width: 768px;
+        border-bottom: 1px solid #aaa;
+        border-top: 2px solid orange;
+        background: #fff;
+        margin-bottom: 10px;
+        position: fixed;
+        top:0;
+        opacity: 0.9;
+    }
+    /*容器*/
+    .container {
+        width: 1200px;
+        margin:0 auto;
+        margin-top:50px;
+        background: #fff;
+    }
+
+    /*左侧栏*/
+    .left-side {
+        width: 10%;
+        background:#fff;
+        float:left;
+        font-size: 18px;
+        position: fixed;
+        top:60px;
+    }
+    /*右侧栏*/
+    .right-side {
+        width: 28%;
+        float: right;
+        background: #fff;
+    }
+    /*中间栏*/
+    .main-content {
+        width: 56%;
+        margin-left: 14%;
+    }
+
+    /*顶部logo*/
+    .top .logo {
+        width: 90px;
+        font-size:18px;
+        font-weight: bold;
+        font-style: italic;
+        margin-left: 50px;
+        float: left;
+    }
+    
+    /*顶部搜索框*/
+    @media screen and (min-width:1280px){
+        .top .search {
+            width: 450px;
+        }
+        .top .search input{
+            width: 450px;
+        }
+    }
+    @media screen and(max-width: 1280px) and(min-width: 768px){
+        .top .search {
+            width: 250px;
+        }
+        .top .search input{
+            width: 250px;
+        }
+    }
+    @media screen and(max-width: 768px){
+        .top .wrapper {
+            width: 720px;
+            margin:0 auto;
+        }
+        .top .search {
+            width: 150px;
+        }
+        .top .search input{
+            width: 150px;
+        }
+    }
+    .top .search {
+        margin-left: 20px;
+        float: left;
+        margin-top: 8px;
+    }
+
+    /*顶部菜单*/
+    .top .menu {
+        float: right;
+        width: 320px;
+        margin-right: 10px;
+    }
+    
+    /*顶部登录*/
+    .top .top-login {
+        float: right;
+        line-height: 50px;
+    }
+
+    /*顶部logo样式*/
+    .top .logo a {
+        line-height: 50px;
+        display: inline-block;
+        height: 50px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .top .logo img{
+        float: left;
+    }
+
+    .top .logo span {
+        float: left;
+    }
+    
+    /*顶部搜索框样式*/
+    .top .search input{
+        height: 25px;
+        /*width: 450px;*/
+        background: #F2F2F5 url(search.png) no-repeat right;
+        text-align: center;
+    }
+    
+    /*顶部菜单*/
+    .top .menu ul {
+        list-style-type: none;
+    }
+
+    .top .menu a:hover ,.top .menu a:active{
+        color: #FF8140;
+    }
+    .top .top-login a:link,.top .top-login a:visited {
+        text-decoration: none;
+        color: #696E78;
+    }
+    .top .top-login a:hover {
+        color: #FF8140;
+    }
+    .top .menu li {
+        float:left; 
+        margin-left: 30px;
+    }
+    .top .menu a:link, .top .menu a:visited {
+        color: #696E78;
+        text-decoration: none;
+    }
+    .top .menu a:hover, .top .menu a:active {
+        color: #FE5435;
+        text-decoration: none;
+    }
+    
+    .top .top-login span {
+        margin-right: 25px;
+    }
+    
+    /*左侧栏*/
+    .left-side ul {
+        list-style-type: none;
+        padding: 0;
+        width: 80%;
+        margin:0 auto;
+    }
+    .left-side li {
+         
+    }
+    .left-side a {
+        text-decoration: none;
+        display: block;
+        height: 2em;
+        margin-bottom: 1px;
+        text-align: center;
+        line-height: 2em;
+        border-radius: 4px;
+    }
+    .left-side a:link, .left-side a:visited {
+        color:black;
+        background: #fff;
+    }
+    .left-side a:hover ,.left-side a:active {
+        color: #fff;
+        background: #FE5435;
+    }
+
+
+    /*右侧栏*/
+    .login {
+        height: 280px;
+        background: #F2F2F5;
+        margin-bottom: 5px;
+        padding:3px;
+    }
+    .fresh-news {
+        border-top:1px solid #FE5435;
+        height: 400px;
+        background: #F2F2F5;
+    }
+    
+    /*右侧栏登录框*/
+    .login .swapper {
+        margin:10px;
+        padding:20px;
+        background: #fff;
+        position: relative;
+    }
+
+    .login .title {
+        font-size: 14px;
+        font-weight: bold;
+        /*border-bottom: 3px solid #FE5435;*/
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    .login .title a {
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+    }
+    #account-login {
+        border-bottom: 3px solid #FE5435;
+    }
+    #safe-login {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .right-side .login .content {
+        /*visibility: hidden;*/
+    }
+    .right-side .login .content input{
+        padding-left: 2em;
+    }
+    .right-side .login .safe-content {
+        background: url(safelogin.png) no-repeat center;
+        position: absolute;
+        top:80px;
+        left: 80px;
+        height: 145px;
+        width: 145px;
+        visibility: hidden;
+    }
+    .login .title #account-login:link,.login .title a#account-login:visited,
+    .login .title #account-login:hover,.login .title a#account-login:active{
+        color: black;
+    }
+    .login .title #safe-login:link,.login .title a#safe-login:visited,
+    .login .title #safe-login:hover,.login .title a#safe-login:active{
+        color: #808080;
+    }
+    .login .user, .login .passwd {
+        height: 2em;
+        padding:10px;
+    }
+
+    .login .user input, .login .passwd input {
+        height: 2em;
+        background: url(user.png) no-repeat left;
+        width: 90%;
+    }
+    input::-ms-input-placeholder{padding-left: 2em;}
+    input::-webkit-input-placeholder{padding-left: 2em;}
+
+    .login .remember {
+        font-size: 12px;
+        color: #808080;
+    }
+    .login .remember span {
+        float: right;
+    }
+    .login .remember a:link,.login .remember a:visited {
+        color: #808080;
+    }
+    .login .remember a:hover ,.login .remember a:active {
+        color: #FF8140;
+    }
+    .login .login-btn {
+        display: inline-block;
+        height: 2em;
+        width: 100%;
+        background: #FF8140;
+        color:#fff;
+        text-align: center;
+        border-radius: 2px;
+        line-height: 2em;
+    }
+    .login .register {
+        font-size: 12px;
+        color: #808080;
+        border-bottom: 1px solid #eee;
+        height: 2em;
+        padding-top:5px;
+    }
+    .register a:link,.register a:hover,.register a:visited,.register a:active {
+        color:#FF8140;
+    }
+    
+    .login .other-way {
+        font-size: 12px;
+        color: #808080;
+        height: 1em;
+        padding-top: 5px;
+        line-height: 1em;
+    }
+    .login .other-way span {
+        float: left;
+    }
+    .login .other-way img {
+        float: left;
+    }
+
+    /*主体内容*/
+    
+    /*banner图*/
+    .main-content .banner {
+        background:url(banner.png) no-repeat;
+        width: 660px;
+        height: 300px;
+        margin:0 auto;
+        margin-bottom: 5px;
+    }
+    /*未读提示*/
+    .main-content .unread {
+        background: #FFFDEC;
+        color:#ED7350;
+        margin:10px 0;
+        text-align: center;
+        height: 2em;
+        line-height: 2em;
+        font-size: 14px;
+    }
+    .main-content .unread a:hover,.main-content .unread a:active,
+    .main-content .unread a:visited,.main-content .unread a:link{
+        color:#ED7350;
+    }
+    .main-content .unread span {
+        color: #eee;
+        float: right;
+        margin-right: 10px;
+    }
+    /*微博*/
+    .weibo {
+        /*background: #ddd;*/
+        height: 110px;
+        margin-bottom: 5px;
+        
+    }
+    .weibo>img {
+        float: left;
+    }
+    .weibo .wrapper {
+        float: left;
+        margin-left: 10px;
+    }
+    .weibo .wrapper>p {
+        font-size: 12px;
+        color: #808080;
+    }
+    .weibo .wrapper>p span:nth-child(2){
+        float: right;
+    }
+    .weibo .wrapper>p span {
+        display: inline-block;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+    } 
+    .weibo .wrapper >p span img {
+        vertical-align: middle;
+    }
+
+    /*微博新鲜事*/
+    .fresh-news .swapper {
+        width: 94%;
+        margin:0 auto;
+    }
+    .fresh-news>h3 {
+        word-spacing: 1px;
+        font-size: 18px;
+    }
+    .fresh-news .news {
+        font-size: 14px;
+        height: 76px;
+        color:#333;
+        margin-bottom: 10px;
+    }
+    .fresh-news .news p {
+        color: #808080;
+        font-size: 12px;
+    }
+    .fresh-news img {
+        float: right;
+        margin-left: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="wrapper">
+            <div class="logo"><a href=""><img src="logo.png" alt=""><span>微博</span></a></div>
+            <div class="search"><input type="text"></div>
+            <div class="top-login"><span><a href="">注册</a></span><span><a href="">登录</a></span></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">视频</a></li>
+                    <li><a href="">发现</a></li>
+                    <li><a href="">游戏</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="left-side">
+            <ul>
+                <li><a href="">热门</a></li>
+                <li><a href="">明星</a></li>
+                <li><a href="">头条</a></li>
+                <li><a href="">视频</a></li>
+                <li><a href="">新鲜事</a></li>
+                <li><a href="">榜单</a></li>
+                <li><a href="">搞笑</a></li>
+                <li><a href="">社会</a></li>
+                <li><a href="">情感</a></li>
+                <li><a href="">时尚</a></li>
+                <li><a href="">军事</a></li>
+                <li><a href="">美女</a></li>
+                <li><a href="">体育</a></li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <div class="login">
+                <div class="swapper">
+                    <div class="title"><a id="account-login" href="">账号登录</a><a id="safe-login" href="">安全登录</a></div>
+                    <div class="content">
+                        <div class="user"><input type="text" placeholder="邮箱/会员帐号/手机号"></div>
+                        <div class="passwd"><input type="text" placeholder="请输入密码"></div>
+                        <div class="remember"><input type="checkbox">记住我<span><a href="">忘记密码</a></span></div>
+                        <div class="login-btn">登录</div>
+                        <div class="register">还没有微博？<span><a href="">立即注册！</a></span></div>
+                        <div class="other-way"><span>其它登录：</span><a href=""><img src="tao.png" alt=""></a><a href=""><img src="qq.png" alt=""></a></div>
+                    </div>
+                    <div class="safe-content"></div>
+                </div>
+            </div>
+            <div class="fresh-news">
+                <div class="swapper">
+                    <h3>微博新鲜事</h3>
+                    <div class="news"><img src="news01.png" alt="">王树彤亲历越南APEC会议：与各国领导人面对面 <p>11月14日 19：10</p></div>
+                    <div class="news"><img src="news02.png" alt="">携程CEO就亲子园事件做最终通报：两副总裁被免职 <p>今天 08：57</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="banner"></div>
+            <div class="unread"><a href="">您有未读内容，点击查看</a><span>x</span></div>
+            <div class="weibo">
+                <img src="weibo1.png" alt="">
+                <div class="wrapper">
+                    <h3>美记者访华收获惊喜：以为中国像印度 实际比英国更好</h3>
+                    <p><span><img src="cankao.png" alt="">参考消息  11月14日 10：48</span><span><img src="zhuanfa.png" alt="">234 | <img src="pinglun.png" alt="">23 | <img src="dianzan.png" alt="">43</span> </p>
+                </div>
+                
+            </div>
+            <div class="weibo">
+                <img src="weibo2.png" alt="">
+                <div class="wrapper">
+                    <h3>今天是11月17日，药师佛圣诞日，南无药师琉璃光如来！</h3>
+                    <p><span><img src="fj.png" alt="">佛经微博  今天 04：39</span><span><img src="zhuanfa.png" alt="">471 | <img src="pinglun.png" alt="">169 | <img src="dianzan.png" alt="">233</span> </p>
+                </div>
+                
+            </div>
+            <div class="weibo">
+                <img src="weibo2.png" alt="">
+                <div class="wrapper">
+                    <h3>今天是11月17日，药师佛圣诞日，南无药师琉璃光如来！</h3>
+                    <p><span><img src="fj.png" alt="">佛经微博  今天 04：39</span><span><img src="zhuanfa.png" alt="">471 | <img src="pinglun.png" alt="">169 | <img src="dianzan.png" alt="">233</span> </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<script>
+    var banner = document.getElementsByClassName("banner")[0];
+    var pos = ["0 0","-660px 0","-1320px 0"];
+    var i = 0;
+    movePic();
+    function movePic(){
+        banner.style.backgroundPosition  = pos[i%3];
+        i++;
+        var t = setTimeout('movePic()',5000);
+    }
+    var safeLogin = document.getElementById("safe-login");
+    var accountLogin = document.getElementById("account-login");
+    var rightSide = document.getElementsByClassName("right-side")[0];
+    var login = rightSide.getElementsByClassName("login")[0];
+    var loginContent = login.getElementsByClassName("content")[0];
+    var safeContent = login.getElementsByClassName("safe-content")[0];
+    safeLogin.onclick = function(){
+        // login.removeChild(".user");
+        loginContent.style.visibility = "hidden";
+        this.style.color = "black";
+        this.style.borderBottom ="solid 3px #FE5435";
+        accountLogin.style.borderBottom = "solid 1px #e5e5e5";
+        accountLogin.style.color="#808080";
+        safeContent.style.visibility="visible";
+        
+        return false;
+    }
+</script>
+</body>
+</html>

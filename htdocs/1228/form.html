@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+    body {
+      background-color: #f3c2c2;
+    }
+    .main {
+        padding:3em 0;
+    }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bootstrap案例</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="1228.html">首页 <span class="sr-only">(current)</span></a></li>
+        <li><a href="blog.html">博客</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="用户名">
+          <input type="text" class="form-control" placeholder="密码">
+        </div>
+        <button type="submit" class="btn btn-success">登录</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<div class="container main">
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="col-sm-2 control-label">邮箱</label>
+    <div class="col-sm-10">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入邮箱地址">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" class="col-sm-2 control-label">密码</label>
+    <div class="col-sm-10"><input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码"></div>
+  </div>
+  <div class="form-group">
+      <label for="sex" class="control-label col-sm-2">性别</label>
+      <div class="col-sm-10">
+          <div class="radio-inline">
+              <label for="">
+                  <input type="radio" name="options" value="option1" checked="checked">
+                  男
+              </label>
+          </div>
+          <div class="radio-inline">
+              <label for="">
+                  <input type="radio" name="options" value="option2" checked="checked">
+                  女
+              </label>
+          </div>
+      </div>
+  </div>
+  <div class="form-group">
+      <label for="question" class="col-sm-2 control-label">密保问题</label>
+      <div class="col-sm-10">
+        <select name="" id="question" class="form-control">
+          <option value="">你第一次坐飞机是飞往哪里？</option>
+          <option value="">你第一任领导的名字？</option>
+        </select>
+      </div>
+  </div>
+  <div class="form-group">
+      <label for="question" class="col-sm-2 control-label">密保答案</label>
+      <div class="col-sm-10">
+          <input type="text" class="form-control">
+      </div>
+  </div>
+  <div class="form-group">
+      <label for="interest" class="col-sm-2 control-label">
+          兴趣标签
+      </label>
+      <div class="col-sm-10 all">
+          <label class="checkbox-inline">
+              <input type="checkbox" id="checkbox-news" value="1">新闻
+          </label>
+          <label class="checkbox-inline">
+              <input type="checkbox" id="checkbox-news" value="1">文化
+          </label>
+          <label class="checkbox-inline">
+              <input type="checkbox" id="checkbox-news" value="1">体育
+          </label>
+          <label class="checkbox-inline">
+              <input type="checkbox" id="checkbox-news" value="1">财经
+          </label>
+          <label class="checkbox-inline">
+              <input type="checkbox" id="checkbox-news" value="1">时尚
+          </label>
+          <label class="checkbox-inline">
+              <input type="checkbox" id="checkbox-news" value="1">汽车
+          </label>
+          <label class="checkbox-inline">
+              <input type="checkbox" id="checkbox-news" value="1">房产
+          </label>
+          <label class="checkbox-inline">
+              <input type="checkbox" id="checkbox-news" value="1">娱乐
+          </label>
+          <label class="checkbox-inline">
+              <input type="checkbox" id="checkbox-all" value="1">全选
+          </label>
+      </div>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-10 col-sm-offset-2">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">我已阅读条款1
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">我已阅读条款2
+            </label>
+        </div>
+      </div>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-10 col-sm-offset-2">
+          <button class="btn btn-primary">提交</button>
+      </div>
+  </div>
+</form>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+    $("#checkbox-all").on("click",function() {
+        if($(this).is(':checked')){
+            $(".all").find("input").attr("checked","true");
+        } else {
+            $(".all").find("input").removeAttr("checked");
+        }
+    })
+</script>
+</body>
+</html>

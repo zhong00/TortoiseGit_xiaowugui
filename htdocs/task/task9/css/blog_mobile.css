@@ -1,0 +1,117 @@
+body, div ,p,h3,ul,li {
+    margin:0;
+    padding:0;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    background: #FAFAFA;
+}
+a {
+    text-decoration: none;
+}
+
+.g-top {
+    height: 2em;
+    line-height: 2em;
+    width: 100%;
+    color: #1DB176;
+    text-align: center;
+}
+
+.g-top a {
+    display: block;
+    width: 4em;
+    float: right;
+}
+
+.g-top a:link,.g-top a:visited{
+    color: #000;
+}
+
+.g-top a:hover,.g-top a:active{
+    color: #1DB176;
+}
+
+.g-top span {
+    float: right;
+}
+
+.g-menu {
+    height: 50px;
+    width: 100%;
+    background: #1DB176;
+}
+
+.g-menu img {
+    float: right;
+    margin:10px;
+}
+
+.g-banner {
+    height: 80px;
+    background: #F3A746 url(../images/hand.png) no-repeat 20% 50%;
+    color: #fff;
+}
+.g-banner .wrap {
+    width: 140px;
+    margin-left: 170px;
+    padding-top: 20px;
+}
+.g-banner .wrap>p {
+    float: right;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 75px;
+}
+.g-banner .left {
+    text-align: right;
+    margin-right: 75px;
+}
+.g-banner .left p:nth-child(1) {
+    font-size: 14px;
+}
+.g-banner .left p:nth-child(2) {
+    font-size: 12px;
+}
+h3.title {
+    font-size: 14px;
+    font-weight: normal;
+    padding:5px;
+    background: #fff;
+    height: 4em;
+    line-height: 4em;
+}
+.g-main {
+    width: 90%;
+    margin:10px auto;
+    background: #fff;
+}
+
+.g-main h3 {
+    font-size: 14px;
+    text-align: center;
+    height: 4em;
+    line-height: 4em;
+    border-bottom: 1px solid #f9f9f9;
+}
+.g-main ul {
+    padding:10px 0;
+}
+.g-main a {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+    background: url(../images/listo.png) no-repeat 30% 50%;
+}
+
+.g-main a:link, .g-main a:visited{
+    color: #1DB176;
+}
+
+.g-main a:hover, .g-main a:active{
+    color: #F3A746;
+}

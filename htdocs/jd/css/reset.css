@@ -1,0 +1,12 @@
+body ,ul ,li ,a ,div ,span ,img ,input,p {
+    margin:0;
+    padding:0;
+} 
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}

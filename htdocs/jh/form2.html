@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show();">show</button>
+    <p id="my"></p><br />
+    <h1>增加用户</h1>
+    <input type="text" id="fname">
+    <input type="text" id="lname">
+    <button onclick="add();">添加</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+    function show(){
+        var XMLHttp=null;
+        if(window.XMLHttpRequest)
+        {
+            XMLHttp=new XMLHttpRequest();
+        } else if(window.ActiveXObject)
+        {
+            XMLHttp=new ActiveXObject("Microsoft.XMLHttp");
+        }
+        XMLHttp.onreadystatechange=function(){
+            if(XMLHttp.readyState==4 && XMLHttp.status==200){
+                document.getElementById("my").innerHTML=XMLHttp.responseText;
+            }
+        }
+        XMLHttp.open("GET","php/form2.php",true);
+        XMLHttp.send();
+    }
+    function add(){
+        var XMLHttp=null;
+        if(window.XMLHttpRequest)
+        {
+            XMLHttp=new XMLHttpRequest();
+        } else if(window.ActiveXObject)
+        {
+            XMLHttp=new ActiveXObject("Microsoft.XMLHttp");
+        }
+        XMLHttp.onreadystatechange=function(){
+            if(XMLHttp.readyState==4 && XMLHttp.status==200){
+                document.getElementById("result").innerHTML=XMLHttp.responseText;
+            }
+        }
+        XMLHttp.open("POST","php/form2.php",true);
+        var url= "fname="+document.getElementById("fname").value;
+        url+="&lname="+document.getElementById("lname").value;
+        XMLHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        XMLHttp.send(url);
+    }
+    </script>
+</body>
+</html>

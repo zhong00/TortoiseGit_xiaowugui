@@ -8,20 +8,26 @@
 </head>
 <body>
     <div>
-        <ul>
-            <li><strong>1</strong>JAN</li>
-            <li><strong>2</strong>FEB</li>
-            <li><strong>3</strong>MAR</li>
-            <li><strong>4</strong>APR</li>
-            <li><strong>5</strong>MAY</li>
-            <li><strong>6</strong>JUN</li>
-            <li><strong>7</strong>JUL</li>
-            <li><strong>8</strong>AUG</li>
-            <li><strong>9</strong>SEP</li>
-            <li class="current"><strong>10</strong>OCT</li>
-            <li><strong>11</strong>NOV</li>
-            <li><strong>12</strong>DEC</li>
-        </ul>
+        <table>
+        <tr>
+            <td data-index="0"><strong>1</strong>JAN</td>
+            <td data-index="1"><strong>2</strong>FEB</td>
+            <td data-index="2"><strong>3</strong>MAR</td>
+        </tr>
+        <tr>
+            <td data-index="3"><strong>4</strong>APR</td>
+            <td data-index="4"><strong>5</strong>MAY</td>
+            <td data-index="5"><strong>6</strong>JUN</td>
+        </tr>
+            <td data-index="6"><strong>7</strong>JUL</td>
+            <td data-index="7"><strong>8</strong>AUG</td>
+            <td data-index="8"><strong>9</strong>SEP</td>
+        <tr>
+            <td data-index="9" class="current"><strong>10</strong>OCT</td>
+            <td data-index="10"><strong>11</strong>NOV</li>
+            <td data-index="11"><strong>12</strong>DEC</td>
+        </tr>
+        </table>
         <div id="holiday">
             <p class="title">10月节日</p>
             <p class="content">国庆节：10月1日至7日放假7天。</p>
@@ -53,10 +59,11 @@
         "立冬：11月8日立冬。不放假。",
         "艾滋病日:12月1日<br />废除奴隶制国际日:12月2日。"
         ]; 
-        $("li").hover(function(){
-            var otext = oArray[$(this).index()];
+        $("td").hover(function(){
+            var otext = oArray[parseInt($(this).data("index"))];
             $(this).addClass("current");
-            $("#holiday").empty().append("<p class='title'>"+($(this).index()+1)+"月节日</p><p class='content'>"+otext+"</p>");
+            $(this).siblings().removeClass("current");
+            $("#holiday").empty().append("<p class='title'>"+(parseInt($(this).data("index"))+1)+"月节日</p><p class='content'>"+otext+"</p>");
         },function(){
             $(this).removeClass("current");
         });   

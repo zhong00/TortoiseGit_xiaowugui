@@ -11,36 +11,36 @@
         <div class="logo">666牌计算器</div>
         <input type="textarea" readonly="readonly" id="show">
         <input type="textarea" readonly="readonly" id="input"><!-- 只读状态 -->
-        <div>
-            <div class="line">
-                <span class="symbol" id="start">c</span>
+        <table>
+            <tr class="line">
+                <td colspan="2"><span class="symbol" id="start">c</span></td>
                 
-                <span class="symbol">/</span>
-                <span class="symbol">*</span>
-            </div>
-            <div class="line">
-                <span class="number">7</span>
-                <span class="number">8</span>
-                <span class="number">9</span>
-                <span class="symbol">-</span>
-            </div>
-            <div class="line">
-                <span class="number">4</span>
-                <span class="number">5</span>
-                <span class="number">6</span>
-                <span class="symbol" id="plus">+</span>
-            </div>
-            <div class="line">
-                <span class="number">1</span>
-                <span class="number">2</span>
-                <span class="number">3</span>
-                <div class="equal">=</div>
-            </div>
-            <div class="line">
-                <span class="number0 number">0</span>
-                <span class="number">.</span>
-            </div>
-        </div>
+                <td><span class="symbol">/</span></td>
+                <td><span class="symbol">*</span></td>
+            </tr>
+            <tr class="line">
+                <td><span class="number">7</span></td>
+                <td><span class="number">8</span></td>
+                <td><span class="number">9</span></td>
+                <td><span class="symbol">-</span></td>
+            </tr>
+            <tr class="line">
+                <td><span class="number">4</span></td>
+                <td><span class="number">5</span></td>
+                <td><span class="number">6</span></td>
+                <td><span class="symbol" id="plus">+</span></td>
+            </tr>
+            <tr class="line">
+                <td><span class="number">1</span></td>
+                <td><span class="number">2</span></td>
+                <td><span class="number">3</span></td>
+                <td rowspan="2"><div class="equal">=</div></td>
+            </tr>
+            <tr class="line">
+                <td colspan="2"><span class="number0 number">0</span></td>
+                <td><span class="number">.</span></td>
+            </tr>
+        </table>
     </div>
     <script>
     

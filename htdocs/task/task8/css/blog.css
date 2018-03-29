@@ -1,0 +1,114 @@
+@import url(reset.css);
+@import url(common.css);
+
+.g-banner .g-content {
+    width: 1200px;
+    margin:0 auto;
+    height: 250px;
+    background: #F3A746 url(../image/hand1.png) no-repeat left bottom;
+}
+
+.g-banner {
+    background: #F3A746;
+    height: 250px;
+    color: #fff;
+}
+
+.g-banner .wrap {
+    padding-top: 86px;
+    margin-left: 500px;
+    width: 300px;
+}
+
+.g-banner .wrap>p{
+    font-size: 38px;
+    float: right;
+    margin: 20px 0 0 20px;
+}
+
+.g-banner .left p:nth-child(1){
+    font-size: 32px;
+}
+.g-banner .left {
+    text-align: right;
+}
+.g-banner .left p:nth-child(2){
+    font-size: 26px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: normal;
+    width: 1200px;
+    margin:20px auto;
+}
+.title span {
+    color: #1DB176;
+}
+
+.g-main {
+    margin-bottom: 160px;
+}
+.g-content:after {
+    content: "clear";
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    clear:both;
+    display: block;
+}
+
+.g-main .g-content {
+    width: 1200px;
+    margin:20px auto;
+}
+.g-main .g-side {
+    width: 300px;
+    float: left;
+    background:#fff;
+    padding-bottom: 2em;
+}
+
+.g-main .g-side h4 {
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.g-main ul{
+    text-align: center;
+    font-size: 14px;
+}
+
+.g-main ul a {
+    display: block;
+    height: 2em;
+    line-height: 2em;
+    background: url(../image/listo.png) no-repeat 30% 50%;
+}
+
+.g-main ul a:link,.g-main ul a:visited {
+    color: #1DB176;
+}
+
+.g-main ul a:hover,.g-main ul a:active,.g-main ul a.active {
+    color: #F3A746;
+}
+.g-main .g-main-main {
+    width: 800px;
+    float: right;
+    background:#fff;
+    padding:35px;
+    color: #ababab;
+}
+
+.g-main .g-main-main h4{
+    text-align: center;
+    height: 4em;
+    line-height: 4em;
+}
+
+.g-main .g-main-main article{
+    line-height: 1.5em;
+}

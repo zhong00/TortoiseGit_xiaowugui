@@ -11,12 +11,12 @@
     <table class="table table-striped" id="showMovie">
     <thead>
         <tr>
-        <td>序号</td>
-        <td>名称</td>
-        <td>地区</td>
-        <td>导演</td>
-        <td>演员</td>
-        <td>评分</td>
+        <th>序号</th>
+        <th>名称</th>
+        <th>地区</th>
+        <th>导演</th>
+        <th>演员</th>
+        <th>评分</th>
         <tr>
     </thead>
     <tbody>
@@ -32,14 +32,15 @@ $(document).ready(function($) {
         url:"php/movie.php",
         data:"{}",
         success:function(data){
-            $("#showMovie").empty();
+            $("#showMovie").find("tbody").empty();
             $.each(data,function(i,item){
                 $("#showMovie").find("tbody").append(
-                    "<tr><td>"+item.title+"<td>"+
-                    "<td>"+item.region+"<td>"+
-                    "<td>"+item.director+"<td>"+
-                    "<td>"+item.actors+"<td>"+
-                    "<td>"+item.rate+"<td></tr>")
+                    "<tr><td>"+(i+1)+"</td>"+
+                    "<td>"+item.title+"</td>"+
+                    "<td>"+item.region+"</td>"+
+                    "<td>"+item.director+"</td>"+
+                    "<td>"+item.actors+"</td>"+
+                    "<td>"+item.rate+"</td></tr>")
             })
         },
         error:function(XMLHttpRequest,textStatus,errorThrown){

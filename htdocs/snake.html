@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+    <style>
+    td {
+        border:1px solid #000;
+        height: 20px;
+        width: 20px;
+    }
+    table {
+        border-collapse: collapse;
+        margin:10px auto;
+    }
+    </style>
+</head>
+<body>
+<table id="game">
+</table>
+<script>
+var row = col = 20,
+    snake = new Array(),
+    snakeEl = new Array(),
+    food,
+    foodEl,
+    length = 3,
+    dir,
+    direction = {
+        left:-1,
+        right:1,
+        up:2,
+        down:-2
+    },
+    m;
+/*建格子*/
+function plane(){
+    var tr,
+        td,
+        game = document.getElementById("game");
+    console.log(row+col+"#game");
+    for(var i=0;i<row;i++){
+        tr = document.createElement("tr");
+        for(var j=0;j<col;j++){
+            td = document.createElement("td");
+            td.className = "cell-"+(i+1)+"-"+(j+1);
+            tr.appendChild(td);
+        }
+        game.appendChild(tr);
+    }
+}
+/*随机坐标*/
+function getRandom(){
+    console.log(Math.floor(Math.random()*(row)+1));
+    return Math.floor(Math.random()*(row)+1);
+}
+/*是否吃到*/
+function isSnake(food){
+    for(var i=0;i<snake.length;i++){
+        if(snake[i] === food) {
+            return true;
+        } else return false;
+    }
+}
+/*生成食物位置*/
+function makeFood(){
+    do {
+        food = [getRandom(),getRandom()];
+    } while(isSnake(food))
+}
+
+/*初始蛇*/
+function startHead(){
+    var randomNum = getRandom();
+    if(Math.random()>0.5){
+        if(Math.random()>0.5){
+            for(var i=1;i<length+1;i++){
+                snake.unshift([i,randomNum]);
+            }
+            dir = direction.down;
+            console.log("初始向下");
+        } else {
+            for(var i=0;i<length;i++){
+                snake.unshift([row-i,randomNum]);
+            }
+            dir = direction.up;
+            console.log("初始向上");
+        }
+    } else {
+        if(Math.random()>0.5){
+            for(var i=1;i<length+1;i++){
+                snake.unshift([randomNum,i]);
+            }
+            dir = direction.right;
+            console.log("初始向右");
+        } else {
+            for(var i=0;i<length;i++){
+                snake.unshift([randomNum,col-i]);
+            }
+            dir = direction.left;
+            console.log("初始向左");
+        }
+    }
+    snakeToEl();
+}
+/*返回下一个蛇头的位置*/
+function getNextHead(){
+    switch(dir){
+        case direction.left:
+        return [snake[0][0],snake[0][1]-1];
+        case direction.right:
+        return [snake[0][0],snake[0][1]+1];
+        case direction.up:
+        return [snake[0][0]-1,snake[0][1]];
+        case direction.down:
+        return [snake[0][0]+1,snake[0][1]];
+    }
+}
+/*更新蛇*/
+function updateSnake(){
+    snakeEl = [];
+    snake.unshift(getNextHead());
+    console.log(food+" ,"+snake[0]);
+    if(food[0]===snake[0][0]&&food[1]===snake[0][1]){
+        food = [];
+        makeFood();
+    } else {
+        snake.pop();
+    }
+    if(snakeToEl()) {
+        colorSnake();
+    } else {
+        return false;
+    }
+    m = setTimeout("updateSnake()",1000);
+    
+}
+
+/*键盘事件*/
+document.onkeydown = function(e){
+    if(e.keyCode ===40){
+        /*向下*/
+        dir = direction.down;
+    }
+    if(e.keyCode ===39){
+        /*向右*/
+        dir = direction.right;
+    }
+    if(e.keyCode ===38){
+        /*向上*/
+        dir = direction.up;
+    }
+    if(e.keyCode ===37){
+        /*向左*/
+        dir = direction.left;
+    }
+}
+/*初始状态*/
+function init(){
+    plane();
+    makeFood();
+    startHead();
+    colorSnake();
+    updateSnake();
+}
+init();
+
+/*view*/
+function getElementByRowAndCol(row,col){
+    var classname = "cell-"+row+"-"+col;
+    return document.getElementsByClassName(classname)[0];
+}
+
+function snakeToEl(){
+    for(var i=0;i<snake.length;i++){
+        if(snake[i][0]<=0||snake[i][0]>row||snake[i][1]<=0||snake[i][1]>row){
+            alert("撞墙死了");
+            return false;
+        }
+        snakeEl.push(getElementByRowAndCol(snake[i][0],snake[i][1]));
+    }
+    foodEl = getElementByRowAndCol(food[0],food[1]);
+    return true;
+}
+
+function colorSnake(){
+    console.log("colorSnake"+snakeEl.length);
+    var allTd = document.getElementsByTagName("td")
+    for(var j=0;j<allTd.length;j++){
+        allTd[j].style.backgroundColor="#fff";
+    }
+    for(var i=0;i<snake.length;i++){
+        snakeEl[i].style.backgroundColor = "red";
+    }
+    foodEl.style.backgroundColor = "blue";
+}
+
+</script>
+</body>
+</html>

@@ -16,10 +16,10 @@ header("Content-Type: application/json;charset=utf-8");
         $text="[";
         while($row = mysql_fetch_array($result))
         {
-            $text.= '{"title":"' .$row['title'].'","region":"'.$row['region'].'","director":"'.$row['director'].
-            '","actors":"'.$row['actors'].'","rate":"'.$row['rate'].'"},';
+            //$text.= '{"title":"' .$row['title'].'"},';
+            $text.= '{"title":"' .$row['title'].'","region":"'.$row['region'].'","director":"'.$row['director'].'","actors":"'.$row['actors'].'","rate":"'.$row['rate'].'"},';
         }
-        // $text = substr($text, 0,strlen($text)-1);
+        $text = substr($text, 0,strlen($text)-1);
         $text .= "]";
         echo $text;
         mysql_close($con);

@@ -1,47 +1,247 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>demo1</title>
-    <link rel="stylesheet" href="demo1.css" type="text/css">
-    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>个人网站</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="menu.js"></script>
+    <style>
+
+    .header {
+        background-color:#fff;
+        margin-bottom:0;
+    }
+    .banner {
+        color:#34495e;
+        position: relative;
+    }
+    .filter {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fe5757;
+        animation: colorChange 2s ease-in-out infinite;
+        animation-fill-mode: both;
+        mix-blend-mode: overlay;
+    }
+
+    @keyframes colorChange {
+        0%, 100% {
+            opacity: 0;
+        }
+        50% {
+            opacity: .9;
+        }
+    }
+    ul {
+        list-style-type: none;
+        padding:0;
+    }
+    .page {
+        height: 80px;
+        background:#fe9;
+        boder:1px solid #fe9;
+        border-radius: 5px;
+        padding: 10px 50px;
+        margin:20px 0;
+    }
+    .page:hover {
+        background-color:#f8f8f8;
+    }
+    .page .title a{
+        font-weight: bold;
+    }
+    .page small{
+        color:#7f8c8d!important;
+    }
+    #commentarea {
+        padding:15px;
+        line-height:1.5em;
+    }
+    .name {
+        color:red;
+    }
+    .say ,.date{
+        color:green;
+    }
+    .content {
+        color:blue;
+    }
+    .leave-message .form-group{
+        margin:10px 0;
+    }
+    footer.container-fluid {
+        height: 50px;
+        background-color: #2a2730;
+        color:#fff;
+        text-align: center;
+        position: fixed;
+        bottom: 5px;
+        width: 100%;
+    }
+    footer p {
+        line-height:50px;
+    }
+    .main-container {
+        margin-bottom: 50px;
+    }
+    </style>
 </head>
 <body>
-    <h2>目录</h2>
-    <div>
-    <dl><dt>练习</dt>
-        <dd>1)<a href="demo2.html">全选/全不选</a></dd>
-        <dd>2)<a href="demo3.html">计算器</a></dd>
-        <dd>3)<a href="demo4.html">遮罩层</a></dd>
-        <dd>4)<a href="handsomeboys.html">我的蓝盆友</a></dd>
-        <dd>5)<a href="demo5.html">demo5</a></dd>
-        <dd>6)<a href="demo6.html">demo6</a></dd>
-        <dd>6)<a href="nianli.html">日历</a></dd>
-    </dl>
-    <dl><dt>网页</dt>
-        <dd>1)<a href="/weibo/weibo.html">微博首页</a></dd>
-        <dd>2)<a href="#">敬请期待</a></dd>
-    </dl>
-    <dl><dt>更多</dt>
-        <dd>1)<a href="#">敬请期待</a></dd>
-        <dd>2)<a href="#">敬请期待</a></dd>
-    </dl>   
+<nav class="navbar navbar-default header">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">个人网站</a>
     </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">菜单<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#web_page">网页</a></li>
+            <li><a href="#phone_page">移动端</a></li>
+            <li><a href="#js">练习</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-->
+</nav>
+<div class="jumbotron banner">
+  <div class="container">
+    <h2>好好学习，天天向上</h2>
+  </div>
+  <div class="filter"></div>
+</div>
+<div class="container main-container">
+<div class="col-md-8">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist" id="tab-header">
+    <li role="presentation" class="active"><a href="#web_page" aria-controls="home" role="tab" data-toggle="tab">网页</a></li>
+    <li role="presentation" class=""><a href="#phone_page" aria-controls="profile" role="tab" data-toggle="tab">移动端</a></li>
+    <li role="presentation" class=""><a href="#js" aria-controls="messages" role="tab" data-toggle="tab">练习</a></li>
     
-    
-    
-    <script>
-    $("dt").click(function(){
-        $(this).parent().siblings().find("dt").css("background-color","blue");
-        $(this).parent().siblings().find("dd").hide();
-        $(this).parent().find("dd").toggle();
-        if($(this).next().is(":visible")){
-            $(this).css("background-color","#42DC59");
-        } else {
-            $(this).css("background-color","blue");
-        }
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="web_page">
+    <ul>
+        <li class="page"><h4 class="title"><a href="show/movie.html">正在热映电影</a></h4>
+            <small>用python爬虫获取存储的豆瓣正在热映电影</small></li>
+        <li class="page"><h4 class="title"><a href="snake.html">贪吃蛇游戏</a></h4>
+            <small>js的在线小游戏</small></li>
+        <li class="page"><h4 class="title"><a href="2048b1.html">2048小游戏</a></h4>
+            <small>js的在线小游戏</small></li>
+        <li class="page"><h4 class="title"><a href="/janeshop/janeshop.html">商城</a></h4>
+            <small>HTML/CSS/JQuery实现的页面，轮播图、换肤、cookie、放大镜</small></li>
+        <li class="page"><h4 class="title"><a href="/weibo/weibo.html">微博首页</a></h4>
+            <small>HTML/CSS/JS实现的页面，轮播图、hover变色、登录框切换</small></li>
+        <li class="page"><h4 class="title"><a href="/jd/jd.html">京东首页</a></h4><small>HTML/CSS/JQuery实现的页面，左侧导航栏、右侧公告栏、搜索框</small></li>
+        <li class="page"><h4 class="title"><a href="/task/task8/index.html">企业网站（兼容移动端）</a></h4><small>HTML/CSS做的首页和新闻页，自适应窗口大小，兼容移动端，查询设备后跳转</small></li>
+        <li class="page"><h4 class="title"><a href="/1228/1228.html">Bootstrap案例</a></h4><small>用Bootstrap框架做的首页、博客页、注册页，自适应窗口大小</small></li>
+        <li class="page"><h4 class="title"><a href="chatroom.html">聊天室-我们来聊天吧</a></h4><small>用Ajax、Json交互，后端PHP/Mysql存储和查询</small></li>
+    </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="phone_page">
+    <ul>
+        <li class="page"><h4 class="title"><a href="task/task7/toupiao.html">小游戏界面</a></h4><small>HTML、CSS响应式布局</small></li>
+        <li class="page"><h4 class="title"><a href="task/task6/task6.html">找护工界面</a></h4><small>HTML、CSS响应式布局</small></li>
+    </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="js">
+    <ul>
+        <li class="page"><h4 class="title"><a href="demo2.html">全选全不选</a></h4></li>
+        <li class="page"><h4 class="title"><a href="demo3.html">计算器</a></h4></li>
+        <li class="page"><h4 class="title"><a href="handsomeboys.html">我的蓝盆友</a></h4></li>
+        <li class="page"><h4 class="title"><a href="demo5.html">demo5</a></h4></li>
+        <li class="page"><h4 class="title"><a href="nianli.html">日历</a></h4></li>
+    </ul>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default">
+      <div class="panel-heading">留言区</div>
+      <div class="panel-body">
+        <form class="leave-message">
+        <textarea id="content"  rows="3" class="form-control" placeholder="请留言"></textarea>
+        <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="署名">
+        </div>
+        <center><button id="insert" class="btn btn-primary text-center">提交</button></center>
+        </form><hr />
+        <div class="jumbotron" id="commentarea"></div>
+      </div>
+      </div>
+</div>
+</div>
+<footer class="container-fluid">
+<p>&#169;copyright</p>
+</footer>
+<script>
+$(document).ready(function() {
+    $.ajax({
+        type:"GET",
+        dataType:"json",
+        url:"php/index.php",
+        data:"{}",
+        success:function(data){
+            $("#commentarea").empty();
+            $.each(data,function(i,item){
+                item.date = item.date.split("/");
+                $("#commentarea").append("<span class='date'>"+item.date[0]+"月"+item.date[1]+"日<span><span class='name'>"+item.name+"</span>"+"<span class='say'> 留言：</span><span class='content'>"+item.content+"</span><br/>");
+            })
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown){  
+            alert(XMLHttpRequest+","+textStatus+","+errorThrown);
+        }  
     });
-   
+    $("#insert").click(function(){
+        var mydate = new Date();
+        $.ajax({
+            type:"POST",
+            url:"php/index.php",
+            data:{
+                content:$("#content").val(),
+                name:$("#name").val(),
+                date:mydate.getMonth()+1+"/"+mydate.getDate()
+            },
+            dataType:"json",
+            success:function(data){
+                $("#content").val("");
+                $("#name").val("");
+                $("#commentarea").empty();
+                $.each(data,function(i,item){
+                    item.date = item.date.split("/");
+                    $("#commentarea").append("<span class='date'>"+item.date[0]+"月"+item.date[1]+"日<span><span class='name'>"+item.name+"</span>"+"<span class='say'> 留言：</span><span class='content'>"+item.content+"</span><br/>");
+                })
+            },
+            error:function(jqXHR){
+                alert("发生错误:"+jqXHR.status);
+            }
+        });
+        return false;
+    });
+    $("#nav .dropdown-menu a").click(function(){
+        var href = $(this).attr("href");
+        $("#tab-header [href='"+href+"']").tab('show');
+        return false;
+    })
+});
     </script>
 </body>
 </html>

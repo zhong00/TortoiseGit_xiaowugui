@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<form action="" class="from1">
+    <fieldset>
+        <legend>基本信息</legend>
+        <label for="username">用户名</label><input type="text" id="username"><br />
+        <label for="email">邮箱</label><input type="text" id="email"><br />
+        <input type="submit" value="提交"><input type="button" value="重置">
+    </fieldset> 
+</form>
+<button id="get">Ajax获取</button>
+<div id="res"></div>
+<script>
+$(document).ready(function() {
+    $("#username").blur(function(){
+        if($(this).val().length<6){
+            $notice = $("<span style='color:red;font-size:12px;'>小于6</span>");
+            $(this).after($notice);
+        }
+    });
+    $("#get").click(function(){
+        $("#res").load("test.html .para");
+    })
+});
+</script>
+</body>
+</html>

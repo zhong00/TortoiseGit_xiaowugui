@@ -1,0 +1,66 @@
+body, div ,p {
+    margin:0;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.g-top {
+    height: 2em;
+    line-height: 2em;
+    width: 100%;
+    color: #1DB176;
+    text-align: center;
+}
+
+.g-top a {
+    display: block;
+    width: 4em;
+    float: right;
+}
+
+.g-top a:link,.g-top a:visited{
+    color: #000;
+}
+
+.g-top a:hover,.g-top a:active{
+    color: #1DB176;
+}
+
+.g-top span {
+    float: right;
+}
+
+.g-menu {
+    height: 50px;
+    width: 100%;
+    background: #1DB176;
+}
+
+.g-menu img {
+    float: right;
+    margin:10px;
+}
+.g-banner {
+    height: 200px;
+    background: #999 url(../images/banner.jpg) no-repeat center;
+    color: #fff;
+    text-align: center;
+}
+.g-banner span{
+    background: #fff;
+    color: #65170B;
+    padding:2px;
+    margin-top: 80px;
+    display: inline-block;
+}
+.g-main {
+    text-align: center;
+    color: #9f9f9f;
+}
+
+.m-main {
+    margin:1em;
+}
