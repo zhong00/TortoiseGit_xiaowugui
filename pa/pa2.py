@@ -20,13 +20,18 @@ class server:
 
 c =MySQLConn(server())
 c.connection()
-# for item in items:
-#     try:
-#         c.execute(c.buildInsert("movie",["title","region","director","actors","rate"],
-#               [item['data-title'],item['data-region'],item['data-director'],item['data-actors'],item['data-rate']]))
-#     except KeyError:
-#         continue
+for item in items:
+    if(not hasattr(item,'data-title')):
+        print("break")
 
-print(c.get_records("movie",10))
+        item['data-title'] = " "
+    print(item['data-title'],item['data-region'],item['data-director'],item['data-actors'],item['data-rate'])
 
+    c.insert("movie",["title","region","director","actors","rate"],[item['data-title'],item['data-region'],item['data-director'],item['data-actors'],item['data-rate']])
+# s = c.get_records("movie",0)
+# for i in s:
+#     for j in i:
+#         print(j)
 
+c.insert("Persons",["FirstName","LastName"],["miao","wang"])
+c.close()
