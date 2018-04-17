@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-__author__ = 'zhonglingling'
+#__author__ = 'zhonglingling'
 
 import requests
 from bs4 import BeautifulSoup
 from mysqlCon import MySQLConn
+
 r = requests.get("https://movie.douban.com/")
 print(r.status_code)
 soup = BeautifulSoup(r.content)

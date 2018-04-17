@@ -19,6 +19,7 @@
     <SUITE FILE_PATH="coverage/pa$mysqlCon.coverage" NAME="mysqlCon Coverage Results" MODIFIED="1522380233551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pa$pa3.coverage" NAME="pa3 Coverage Results" MODIFIED="1522399084652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pa$pa2.coverage" NAME="pa2 Coverage Results" MODIFIED="1523178504066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pa$Student.coverage" NAME="Student Coverage Results" MODIFIED="1523955102317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/doc1" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -57,23 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pa2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pa2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pa2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4885057">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-              <folding>
-                <element signature="e#76#91#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -83,23 +72,36 @@
         <entry file="file://$PROJECT_DIR$/mysqlCon.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
               <folding>
-                <marker date="1523176776798" expanded="true" signature="1068:1081" placeholder="SELECT * FRO..." />
-                <marker date="1523176776798" expanded="true" signature="1068:1082" placeholder="SELECT * FRO..missing_value..." />
-                <marker date="1523176776798" expanded="true" signature="1068:1083" placeholder="SELECT * FRO..." />
-                <marker date="1523176776798" expanded="true" signature="1068:1093" placeholder="SELECT * FRO..." />
-                <marker date="1523176776798" expanded="true" signature="1486:1564" placeholder="INSERT INTO ..." />
+                <element signature="e#1062#1218#0" expanded="false" />
+                <element signature="e#1267#1426#0" expanded="false" />
+                <element signature="e#1482#1601#0" expanded="false" />
+                <marker date="1523868576447" expanded="true" signature="1069:1082" placeholder="SELECT * FRO..." />
+                <marker date="1523868576447" expanded="true" signature="1069:1083" placeholder="SELECT * FRO..missing_value..." />
+                <marker date="1523868576447" expanded="true" signature="1069:1084" placeholder="SELECT * FRO..." />
+                <marker date="1523868576447" expanded="true" signature="1069:1094" placeholder="SELECT * FRO..." />
+                <marker date="1523868576447" expanded="true" signature="1487:1565" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Student.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pa.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pa.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.7142856">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/doc1/Student.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.87439615">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -135,21 +137,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pa3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pa3.py">
+      <file leaf-file-name="movie.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie.txt">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pa.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pa.sql">
+      <file leaf-file-name="pa3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pa3.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -173,11 +178,11 @@
         <option value="$PROJECT_DIR$/doc1/__init__.py" />
         <option value="$PROJECT_DIR$/doc2/__init__.py" />
         <option value="$PROJECT_DIR$/doc1/ex1.py" />
-        <option value="$PROJECT_DIR$/doc1/Student.py" />
         <option value="$PROJECT_DIR$/doc2/ex2.py" />
         <option value="$PROJECT_DIR$/pa1.py" />
-        <option value="$PROJECT_DIR$/mysqlCon.py" />
         <option value="$PROJECT_DIR$/pa2.py" />
+        <option value="$PROJECT_DIR$/mysqlCon.py" />
+        <option value="$PROJECT_DIR$/doc1/Student.py" />
       </list>
     </option>
   </component>
@@ -283,7 +288,7 @@
       <recent name="E:\TortoiseGit_xiaowugui\pa" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pa2">
+  <component name="RunManager" selected="Python.Student">
     <configuration default="false" name="pa1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -320,24 +325,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="mysqlCon" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pa" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysqlCon.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="pa3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -370,6 +357,24 @@
       <module name="pa" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/doc2/ex2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Student" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/doc1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/doc1/Student.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -565,17 +570,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.pa1" />
       <item index="1" class="java.lang.String" itemvalue="Python.pa2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mysqlCon" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pa3" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ex2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pa3" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ex2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Student" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.pa2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pa1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ex2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pa3" />
-        <item index="4" class="java.lang.String" itemvalue="Python.mysqlCon" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Student" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pa2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pa1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ex2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pa3" />
       </list>
     </recent_temporary>
   </component>
@@ -593,17 +598,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15080526" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14860907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1898527" sideWeight="0.409224" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38625205" sideWeight="0.59077597" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2782324" sideWeight="0.59077597" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -633,10 +638,61 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pa1.py">
+    <entry file="file://$PROJECT_DIR$/doc1/Student.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc1/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc2/ex2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="104" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="104" />
           <folding>
             <element signature="e#76#102#0" expanded="true" />
             <marker date="1523175836948" expanded="true" signature="1015:1077" placeholder="INSERT INTO ..." />
@@ -662,10 +718,8 @@
     <entry file="file://$PROJECT_DIR$/pa2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="e#76#91#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -680,13 +734,16 @@
     <entry file="file://$PROJECT_DIR$/mysqlCon.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <marker date="1523176776798" expanded="true" signature="1068:1081" placeholder="SELECT * FRO..." />
-            <marker date="1523176776798" expanded="true" signature="1068:1082" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1523176776798" expanded="true" signature="1068:1083" placeholder="SELECT * FRO..." />
-            <marker date="1523176776798" expanded="true" signature="1068:1093" placeholder="SELECT * FRO..." />
-            <marker date="1523176776798" expanded="true" signature="1486:1564" placeholder="INSERT INTO ..." />
+            <element signature="e#1062#1218#0" expanded="false" />
+            <element signature="e#1267#1426#0" expanded="false" />
+            <element signature="e#1482#1601#0" expanded="false" />
+            <marker date="1523868576447" expanded="true" signature="1069:1082" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1083" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1084" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1094" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1487:1565" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -735,7 +792,112 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#76#102#0" expanded="true" />
+            <marker date="1523175836948" expanded="true" signature="1015:1077" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1085" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1096" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1102" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1110" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1122" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1128" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1136" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1150" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1156" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1164" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1176" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1182" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1190" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1200" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1206" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysqlCon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#1062#1218#0" expanded="false" />
+            <element signature="e#1267#1426#0" expanded="false" />
+            <element signature="e#1482#1601#0" expanded="false" />
+            <marker date="1523868576447" expanded="true" signature="1069:1082" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1083" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1084" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1094" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1487:1565" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc1/Student.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc1/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc2/ex2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -769,9 +931,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="e#76#91#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -788,11 +948,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1523176776798" expanded="true" signature="1068:1081" placeholder="SELECT * FRO..." />
-            <marker date="1523176776798" expanded="true" signature="1068:1082" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1523176776798" expanded="true" signature="1068:1083" placeholder="SELECT * FRO..." />
-            <marker date="1523176776798" expanded="true" signature="1068:1093" placeholder="SELECT * FRO..." />
-            <marker date="1523176776798" expanded="true" signature="1486:1564" placeholder="INSERT INTO ..." />
+            <element signature="e#1062#1218#0" expanded="false" />
+            <element signature="e#1267#1426#0" expanded="false" />
+            <element signature="e#1482#1601#0" expanded="false" />
+            <marker date="1523868576447" expanded="true" signature="1069:1082" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1083" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1084" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1094" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1487:1565" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -809,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -843,8 +1005,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#76#91#0" expanded="true" />
+            <element signature="e#76#102#0" expanded="true" />
+            <marker date="1523175836948" expanded="true" signature="1015:1077" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1085" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1096" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1102" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1110" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1122" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1128" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1136" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1150" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1156" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1164" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1176" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1182" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1190" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1200" placeholder="INSERT INTO ..." />
+            <marker date="1523175836948" expanded="true" signature="1015:1206" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -853,41 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pa1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#76#102#0" expanded="true" />
-            <marker date="1523175836948" expanded="true" signature="1015:1077" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1085" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1096" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1102" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1110" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1122" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1128" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1136" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1150" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1156" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1164" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1176" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1182" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1190" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1200" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="1015:1206" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pa.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -966,44 +1124,10 @@
             <marker date="1523175836948" expanded="true" signature="1015:1200" placeholder="INSERT INTO ..." />
             <marker date="1523175836948" expanded="true" signature="1015:1206" placeholder="INSERT INTO ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movie.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pa.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pa3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc1/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1019,14 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc1/Student.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc2/ex2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1035,17 +1151,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysqlCon.py">
+    <entry file="file://$PROJECT_DIR$/movie.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc1/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <marker date="1523176776798" expanded="true" signature="1068:1081" placeholder="SELECT * FRO..." />
-            <marker date="1523176776798" expanded="true" signature="1068:1082" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1523176776798" expanded="true" signature="1068:1083" placeholder="SELECT * FRO..." />
-            <marker date="1523176776798" expanded="true" signature="1068:1093" placeholder="SELECT * FRO..." />
-            <marker date="1523176776798" expanded="true" signature="1486:1564" placeholder="INSERT INTO ..." />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7142856">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,13 +1204,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysqlCon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="e#1062#1218#0" expanded="false" />
+            <element signature="e#1267#1426#0" expanded="false" />
+            <element signature="e#1482#1601#0" expanded="false" />
+            <marker date="1523868576447" expanded="true" signature="1069:1082" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1083" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1084" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1069:1094" placeholder="SELECT * FRO..." />
+            <marker date="1523868576447" expanded="true" signature="1487:1565" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pa2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4885057">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="e#76#91#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc1/Student.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87439615">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

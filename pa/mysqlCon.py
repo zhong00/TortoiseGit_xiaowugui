@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 __author__ = 'zhonglingling'
 import mysql.connector
+
 class MySQLConn(object):
     def __init__(self,dbServer):
         self.dbServer = dbServer
