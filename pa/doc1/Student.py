@@ -1,3 +1,4 @@
+import time
 __author__ = 'zhonglingling'
 class Student(object):
     def __init__(self,name):
@@ -5,16 +6,25 @@ class Student(object):
 
     def printName(self):
         print(self.name)
+def log(para):
+    def logout(fun):
+        def printlog(*args):
+            if para=="func1":
+                print("start"+fun.__name__)
+                fun(*args)
+                print("end"+fun.__name__)
+            if para == "func2":
+                print("func2,start"+fun.__name__)
+        return printlog
+    return logout
 
-def printLog(fuc):
-    print(fuc.__name__)
+@log(para="func1")
+def sum(a,b):
+    print(a+b)
 
-def add(num1,num2):
-    print(num1+num2)
+@log(para="func2")
+def getNum(a):
+    print("getnum"+a)
 
-printLog(add)
-add(3,5)
-
-def log(fun):
-    print(fun.__name__)
-    #https://blog.csdn.net/callinglove/article/details/45483097
+sum(34,1)
+getNum("jjj")

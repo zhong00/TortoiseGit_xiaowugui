@@ -1,13 +1,13 @@
 # -*- coding:utf-8 -*-
 __author__ = 'zhonglingling'
 import mysql.connector
-
+import log
 class MySQLConn(object):
     def __init__(self,dbServer):
         self.dbServer = dbServer
         self._conn =None
         self._cursor = None
-
+    @log.printLog(level=1)
     def connection(self):
         if(self.dbServer):
             try:
@@ -35,7 +35,7 @@ class MySQLConn(object):
         sql +=";"
         print("build",sql)
         return sql
-
+    @log.printLog(level=2)
     def get_records(self,table,limit):
         self._cursor.execute(self._buildSelect(table,limit))
         list = self._cursor.fetchall()
@@ -47,7 +47,7 @@ class MySQLConn(object):
         m = "INSERT INTO "+table+" ("+",".join(cols)+") "+'VALUES("'+'","'.join(values)+'");'
         print(m)
         return m
-
+    @log.printLog(level=1)
     def insert(self,table,cols,values):
         self.execute(self._buildInsert(table,cols,values))
 
