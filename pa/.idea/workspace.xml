@@ -22,7 +22,8 @@
     <SUITE FILE_PATH="coverage/pa$pa3.coverage" NAME="pa3 Coverage Results" MODIFIED="1522399084652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pa$pa2.coverage" NAME="pa2 Coverage Results" MODIFIED="1524034441409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pa$save.coverage" NAME="save Coverage Results" MODIFIED="1524121276298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comment" />
-    <SUITE FILE_PATH="coverage/pa$do.coverage" NAME="do Coverage Results" MODIFIED="1524139513369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comment" />
+    <SUITE FILE_PATH="coverage/pa$do.coverage" NAME="do Coverage Results" MODIFIED="1524216316624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comment" />
+    <SUITE FILE_PATH="coverage/pa$console.coverage" NAME="console Coverage Results" MODIFIED="1524221081180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comment2" />
     <SUITE FILE_PATH="coverage/pa$Student.coverage" NAME="Student Coverage Results" MODIFIED="1524032836200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/doc1" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -34,54 +35,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="common.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comment/common.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comment/save.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-              <folding>
-                <element signature="e#52#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018041916341596.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comment/2018041916341596.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="3212" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="3343" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="do.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="do.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comment/do.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6372549">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018041919525971.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comment/2018041919525971.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="6696" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#51#86#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,10 +51,94 @@
         <entry file="file://$PROJECT_DIR$/comment/connect.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="56" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding>
                 <element signature="e#51#77#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comment2/common.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comment2/console.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+              <folding>
+                <element signature="e#51#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018042018444164.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comment2/2018042018444164.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="455" selection-start-line="0" selection-start-column="455" selection-end-line="0" selection-end-column="455" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comment2/save.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#52#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connect.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/comment2/connect.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.3991228">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018042018372634.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comment2/2018042018372634.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018042018332559.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comment2/2018042018332559.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="306" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13046" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018042018260611.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comment2/2018042018260611.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13046" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,12 +167,14 @@
         <option value="$PROJECT_DIR$/doc1/Student.py" />
         <option value="$PROJECT_DIR$/log.py" />
         <option value="$PROJECT_DIR$/mysqlCon.py" />
-        <option value="$PROJECT_DIR$/comment/common.py" />
         <option value="$PROJECT_DIR$/comment/2018041916235050.json" />
-        <option value="$PROJECT_DIR$/comment/connect.py" />
+        <option value="$PROJECT_DIR$/comment/2018041919525971.json" />
         <option value="$PROJECT_DIR$/comment/save.py" />
         <option value="$PROJECT_DIR$/comment/do.py" />
-        <option value="$PROJECT_DIR$/comment/2018041919525971.json" />
+        <option value="$PROJECT_DIR$/comment/common.py" />
+        <option value="$PROJECT_DIR$/comment/connect.py" />
+        <option value="$PROJECT_DIR$/comment2/console.py" />
+        <option value="$PROJECT_DIR$/comment2/connect.py" />
       </list>
     </option>
   </component>
@@ -167,7 +214,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -197,12 +243,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="comment2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="comment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,7 +280,7 @@
       <recent name="E:\TortoiseGit_xiaowugui\pa" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.do">
+  <component name="RunManager" selected="Python.console">
     <configuration default="false" name="pa2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -234,24 +295,6 @@
       <module name="pa" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pa2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="log" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pa" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/log.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -306,6 +349,24 @@
       <module name="pa" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comment/do.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="console" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/comment2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comment2/console.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -500,18 +561,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.pa2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.log" />
-      <item index="2" class="java.lang.String" itemvalue="Python.connect" />
-      <item index="3" class="java.lang.String" itemvalue="Python.save" />
-      <item index="4" class="java.lang.String" itemvalue="Python.do" />
+      <item index="1" class="java.lang.String" itemvalue="Python.connect" />
+      <item index="2" class="java.lang.String" itemvalue="Python.save" />
+      <item index="3" class="java.lang.String" itemvalue="Python.do" />
+      <item index="4" class="java.lang.String" itemvalue="Python.console" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.do" />
-        <item index="1" class="java.lang.String" itemvalue="Python.connect" />
-        <item index="2" class="java.lang.String" itemvalue="Python.save" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pa2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.log" />
+        <item index="0" class="java.lang.String" itemvalue="Python.console" />
+        <item index="1" class="java.lang.String" itemvalue="Python.do" />
+        <item index="2" class="java.lang.String" itemvalue="Python.connect" />
+        <item index="3" class="java.lang.String" itemvalue="Python.save" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pa2" />
       </list>
     </recent_temporary>
   </component>
@@ -532,14 +593,14 @@
     <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24670571" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19033675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1898527" sideWeight="0.409224" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28805238" sideWeight="0.59077597" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20949264" sideWeight="0.59077597" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -552,6 +613,27 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1898527" sideWeight="0.409224" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25204584" sideWeight="0.59077597" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07320644" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -571,79 +653,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pa.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pa1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#76#102#0" expanded="false" />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pa2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="e#77#92#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysqlCon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#52#74#0" expanded="false" />
-            <element signature="e#1098#1254#0" expanded="false" />
-            <element signature="e#1329#1488#0" expanded="false" />
-            <element signature="e#1544#1663#0" expanded="false" />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc1/Student.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,25 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
-          <folding>
-            <element signature="e#76#102#0" expanded="false" />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -712,9 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="e#77#92#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -729,17 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#52#74#0" expanded="false" />
-            <element signature="e#1098#1254#0" expanded="false" />
-            <element signature="e#1329#1488#0" expanded="false" />
-            <element signature="e#1544#1663#0" expanded="false" />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -761,25 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="e#76#102#0" expanded="false" />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,9 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#77#92#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -804,25 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#76#102#0" expanded="false" />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,25 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#76#102#0" expanded="false" />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -863,25 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#76#102#0" expanded="false" />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -889,25 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#76#102#0" expanded="false" />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,13 +815,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movie.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doc1/__init__.py">
@@ -960,7 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -968,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,17 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-          <folding>
-            <element signature="e#52#74#0" expanded="false" />
-            <element signature="e#1098#1254#0" expanded="false" />
-            <element signature="e#1329#1488#0" expanded="false" />
-            <element signature="e#1544#1663#0" expanded="false" />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1524034441409" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -994,9 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding>
-            <element signature="e#77#92#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1004,7 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1012,33 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="104" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="104" />
-          <folding>
-            <element signature="e#76#102#0" expanded="false" />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1523175836948" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comment/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,26 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comment/connect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="56" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
-          <folding>
-            <element signature="e#51#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comment/save.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#52#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comment/2018041919525971.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1078,10 +896,148 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/comment/2018042015542957.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/2018042015494325.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="3353" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/2018042017251876.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="46.271187">
+          <caret line="0" column="921" selection-start-line="0" selection-start-column="921" selection-end-line="0" selection-end-column="921" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/save.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#52#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/2018042016201544.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="351" selection-start-line="0" selection-start-column="351" selection-end-line="0" selection-end-column="351" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/2018042016322150.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="84.05085">
+          <caret line="0" column="6868" selection-start-line="0" selection-start-column="6868" selection-end-line="0" selection-end-column="6868" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/comment/do.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6372549">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#51#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment2/2018042018260611.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13046" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment2/2018042018332559.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="306" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13046" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment2/2018042018372634.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/connect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+          <folding>
+            <element signature="e#51#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment2/save.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#52#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment2/2018042018444164.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="455" selection-start-line="0" selection-start-column="455" selection-end-line="0" selection-end-column="455" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment2/console.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <element signature="e#51#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment2/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment2/connect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3991228">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>

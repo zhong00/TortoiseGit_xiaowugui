@@ -3,7 +3,7 @@ __author__ = 'zhonglingling'
 from urllib import request
 from urllib import parse
 from bs4 import BeautifulSoup
-from comment.common import *
+from comment2.common import *
 
 class Connect(object):
     def __init__(self):
@@ -36,7 +36,6 @@ class Connect(object):
         #       print('%s:%s' %(k,v))
         #print('Data',self.data.decode('utf-8'))
         res.close()
-        print("eee")
         return True
 
     @log
@@ -93,10 +92,10 @@ class CommentInfo(object):
     def buildJson(self,list,start):
         if start:
             m = "["
-        else : m = ","
+        else : m = ""
         for i in list:
             self.getInfo(i)
-            m += '{"votes":"'
+            m += ',{"votes":"'
             m += self.votes
             m += '","name":"'
             m += self.name
@@ -107,7 +106,11 @@ class CommentInfo(object):
             m += '","content":"'
             m += self.content
             m += '"}'
-        return m
+        print (m)
+        if start:
+            return m.replace("[,","[",1)
+        else :
+            return m
 
 if __name__== "__main__":
     #a =Connect()
