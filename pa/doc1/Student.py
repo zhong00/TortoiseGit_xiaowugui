@@ -1,30 +1,12 @@
-import time
+#-*- encoding:utf-8 -*-
+import time,os
+import yaml
 __author__ = 'zhonglingling'
-class Student(object):
-    def __init__(self,name):
-        self.name = name
 
-    def printName(self):
-        print(self.name)
-def log(para):
-    def logout(fun):
-        def printlog(*args):
-            if para=="func1":
-                print("start"+fun.__name__)
-                fun(*args)
-                print("end"+fun.__name__)
-            if para == "func2":
-                print("func2,start"+fun.__name__)
-        return printlog
-    return logout
+filePath = os.path.dirname(__file__)
 
-@log(para="func1")
-def sum(a,b):
-    print(a+b)
+print(filePath)
 
-@log(para="func2")
-def getNum(a):
-    print("getnum"+a)
+print(os.path.split(os.path.realpath(__file__))[0])
 
-sum(34,1)
-getNum("jjj")
+print(os.path.join(os.path.split(os.path.realpath(__file__))[0],'config.yaml'))

@@ -2,6 +2,7 @@
 __author__ = 'zhonglingling'
 from urllib import request
 from urllib import parse
+from urllib import error
 from bs4 import BeautifulSoup
 from comment.common import *
 
@@ -28,7 +29,8 @@ class Connect(object):
             return False
         try:
             res = request.urlopen(req)
-        except:
+        except error.HTTPError as e:
+            print(e)
             return False
         self.data = res.read()
         print(res.status,res.reason)
