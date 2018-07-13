@@ -1,0 +1,5 @@
+CREATE DATABASE rdb;
+CREATE TABLE user_define(
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+user_login VARCHAR(20),
+user_passwd VARCHAR(20));

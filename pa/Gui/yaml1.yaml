@@ -1,0 +1,22 @@
+#大小写敏感
+#使用缩进表示层级关系
+#禁止使用tab缩进，只能使用空格键
+#缩进长度没有限制，只要元素对齐就表示这些元素属于一个层级
+#使用#表示注释
+#字符串可以不用引号标注
+
+#info:
+#    name:lingling
+#    height:166
+#    weight:63
+
+name: Tom Smith
+age: 37
+spouse:
+    name: Jane Smith
+    age: 25
+children:
+ - name: Jimmy Smith
+   age: 15
+ - name1: Jenny Smith
+   age1: 12

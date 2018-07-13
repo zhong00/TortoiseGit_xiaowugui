@@ -1,0 +1,5 @@
+2018-06-26 11:39:40,043-rmlog.py[line:15]-INFO:load config
+2018-06-26 11:39:40,044-rmlog.py[line:26]-INFO:Gui
+2018-06-26 11:39:40,045-rmlog.py[line:15]-INFO:load config
+2018-06-26 11:39:40,046-rmlog.py[line:28]-INFO:this is svc_netbus
+2018-06-26 11:39:40,046-rmlog.py[line:30]-INFO:['1.log', '2.log', 'create.py', 'createlog.py', 'exos.py', 'exos1.py', 'netbus.log', 'os.py', 'rmlog.log', 'rmlog.py', 'rmlog.yaml', 'send.py', 'yaml1.py', 'yaml1.yaml', '__pycache__']

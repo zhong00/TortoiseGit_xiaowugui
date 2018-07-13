@@ -1,0 +1,7 @@
+db:
+  host: '10.10.193.59'
+  port: 3306
+  user: 'root'
+  password: ''
+  database: 'rdb'
+  charset: 'utf8'

@@ -1,0 +1,20 @@
+html:
+    url:https://movie.douban.com/subject/4920389/comments
+    limit:20
+
+filter:
+    level1:
+        target:comments
+        method:id
+    level2:
+        target:comment-item
+        method:class
+
+condition:
+    condition1:
+        target:votes
+        method:class
+        item:text
+        judge:>100
+
+
